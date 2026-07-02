@@ -494,7 +494,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
         fillcolor = "#695757";
 
         { rank = "same";
-            belie [label = <BOUALI<BR/>Elie<BR/><I>Président</I>> @BDE@ @NEAN@"];
+            belie [label = <BOUALI<BR/>Elie<BR/><I>Président</I>> @BDE@ @NEAN@];
 			dleo [label = "DUFOUR\nLeo" @ALP@];
 			cgabin [label = "Carpentier\nGabin"];
 			mcome [label = <MARCHON<BR/>Côme<BR/><I>Robotech(VP)</I>>];
