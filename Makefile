@@ -12,7 +12,12 @@ all : $(PDFs)
 #	dot -Tjpg $< > $@
 
 %.pdf: %.dot
-	dot -Tpdf $< > $@
+	sed -e 's/@BDE@/fillcolor="#f05050"/g' \
+	    -e 's/@PREZ@/fillcolor="yellow"/g' \
+		-e 's/@ALP@/penwidth=4 color="#7ed3ecff"/g' \
+		-e 's/@MILLE@/penwidth=4 color="purple"/g' \
+		-e 's/@NEAN@/penwidth=4 color="#00b7ff/g' \
+	    $< | dot -Tpdf > $@
 
 clean:
 	$(RM) *.svg *.jpg *.pdf

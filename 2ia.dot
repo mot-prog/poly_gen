@@ -29,8 +29,8 @@ digraph iia {
 		leg_parrain	[label = "Parrain"];
 		leg_fillot	[label = "Fillot"];
 		leg_fillotadop	[label = "Fillot Adoptif"];
-		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
-		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> @BDE@];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> @PREZ@];
 		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
 
 		leg_parrain -> leg_fillot;
@@ -48,9 +48,9 @@ digraph iia {
 		{ rank="same";
 			antoinebouch	[label = "BOUCHÉ\nAntoine"];
 			antoinekhra	[label = "KHRATOS\nAntoine" penwidth=4 color="yellow"];
-			chloedeb	[label = <DEBERGH<BR/>Chloé<BR/><I>Polydance</I>> fillcolor="yellow"];
+			chloedeb	[label = <DEBERGH<BR/>Chloé<BR/><I>Polydance</I>> @PREZ@];
 			christelle	[label = "\nChristelle"];
-			joker		[label = <CORME<BR/>Baptiste<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			joker		[label = <CORME<BR/>Baptiste<BR/><I>Respo Com</I>> @BDE@ penwidth=4 color="deeppink"];
 			leachantar	[label = "CHANTARAUD\nLéa"];
 			maxencemor	[label = "MAUREL\nMaxence"];
 			valentingam	[label = "GAMAIN\nValentin" penwidth=4 color="white"];
@@ -60,7 +60,7 @@ digraph iia {
 
 
 		{ rank="same";
-			evapicrou	[label = <PICROUILLERE<BR/>Eva<BR/><I>Respo Partenariats/Goodies</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			evapicrou	[label = <PICROUILLERE<BR/>Eva<BR/><I>Respo Partenariats/Goodies</I>> @BDE@ penwidth=4 color="purple"];
 			
 			
 			kelliandup	[label = "DUPONT\nKellian"];
@@ -87,11 +87,11 @@ digraph iia {
 		yasminebahi -> salmabouyad;
 
 		{ rank="same";
-			chloenico	[label = <NICOLE<BR/>Chloé<BR/><I>Respo International</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			chloenico	[label = <NICOLE<BR/>Chloé<BR/><I>Respo International</I>> @BDE@ penwidth=4 color="yellow"];
 			didieraud	[label = "DIDIER\nAudren" penwidth=4 color="orange"];
 			emilebct	[label = "BOUCHET \nEmile" penwidth=4 color="orange"];
 			agatleduc	[label = "LEDUC\nAgathe" penwidth=4 color="orange"];
-			romainorp	[label = <ORPEL<BR/>Romain<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			romainorp	[label = <ORPEL<BR/>Romain<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="yellow"];
 			kbouguetaia [label="BOUGUETAIA\nKenza"];
 
 		}
@@ -105,12 +105,12 @@ digraph iia {
 			arnaudauz  [label = "AUZOU\nArnaud"];
 			constancep [label = "PELLET\nConstance"];
 			agathechop [label = "CHOPIN\nAgathe"];
-			raphaelcle [label = <CLEMENT<BR/>Raphaël<BR/><I>Vice-Président</I>> fillcolor="#f05050" penwidth=4 color="pink"];
-			emmariot   [label = <RIOT<BR/>Emma<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="pink"];
-			ldumenil   [label = <DUMENIL<BR/>Léonie<BR/><I>Prev</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			raphaelcle [label = <CLEMENT<BR/>Raphaël<BR/><I>Vice-Président</I>> @BDE@ penwidth=4 color="pink"];
+			emmariot   [label = <RIOT<BR/>Emma<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="pink"];
+			ldumenil   [label = <DUMENIL<BR/>Léonie<BR/><I>Prev</I>> @BDE@ penwidth=4 color="pink"];
 			corentinec [label = "ECORCE\nCorentin"];
-			theoborel  [label = <BORRELY<BR/>Théo<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"]; 
-			gabrielbr  [label = <BREMARD<BR/>Gabriel<BR/><I>Respo Goodies</I>> fillcolor="#f05050" penwidth=4 color="#2128f5"];
+			theoborel  [label = <BORRELY<BR/>Théo<BR/><I>Respo Inté/Events</I>> @BDE@ penwidth=4 color="pink"]; 
+			gabrielbr  [label = <BREMARD<BR/>Gabriel<BR/><I>Respo Goodies</I>> @BDE@ penwidth=4 color="#2128f5"];
 		}
 		romainorp -> corentinec;
 		romainorp -> theoborel [penwidth=2 color = "#f05050"];
@@ -124,9 +124,9 @@ digraph iia {
 		{ rank="same";
 			amelin 		[label = "MELIN\nArthur"];
 			rchalabi    [label = "CHALABI\nRamzy"];
-			asenez 		[label = <SENEZ<BR/>Alexis<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="green"];
-			tlebrun 	[label = <LEBRUN<BR/>Thibault<BR/><I>Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="purple"];
-			jcratz		[label =<CRATZ<BR/>Justine<BR/><I>PULCE</I>> fillcolor="yellow"];
+			asenez 		[label = <SENEZ<BR/>Alexis<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="green"];
+			tlebrun 	[label = <LEBRUN<BR/>Thibault<BR/><I>Respo Rézo</I>> @BDE@ penwidth=4 color="purple"];
+			jcratz		[label =<CRATZ<BR/>Justine<BR/><I>PULCE</I>> @PREZ@];
 			clalance	[label = "LALANE\nCandice"];
 			gsibille 	[label = "SIBILLE\nGuillaume"];
 			amoraux		[label = "MORAUX\nAnthony"];
@@ -144,11 +144,11 @@ digraph iia {
 		//portalSE -> romainorp [style=dashed penwidth=2 color="#f05050"];
 
 		{ rank="same";
-			mpoissonet 		[label = <POISSONET<BR/>Mathys<BR/><I>PULCE</I>> fillcolor="yellow"];
-			hadell 	   		[label = <ADELL DE ORTELLS<BR/>Hugo<BR/><I>Vice Président</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			mpoissonet 		[label = <POISSONET<BR/>Mathys<BR/><I>PULCE</I>> @PREZ@];
+			hadell 	   		[label = <ADELL DE ORTELLS<BR/>Hugo<BR/><I>Vice Président</I>> @BDE@ penwidth=4 color="yellow"];
 			icaron 			[label = <CARON<BR/>Iona<BR/>>  penwidth=4 color="orange"];
 			cdoucement 		[label = <DOUCEMENT<BR/>Coline<BR/>> penwidth=4 color="orange"];
-			nsantos			[label =<SANTOS<BR/>Nylan<BR/><I>Respo Comm</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			nsantos			[label =<SANTOS<BR/>Nylan<BR/><I>Respo Comm</I>> @BDE@ penwidth=4 color="yellow"];
  			vyeme			[label =<YEME<BR/>Valentine<BR/><I>DDPS Respo Polyjam<BR/>Radio</I>> fillcolor="#f05050:yellow" penwidth=4 color="yellow"];
 		}
 		amoraux -> mpoissonet;

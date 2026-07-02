@@ -43,7 +43,7 @@ subgraph cluster_prod {
 			hugoleja	[label = "LEJAY\nHugo"];
 			thomasfris [label = "FRISSON\nThomas"];
 			audreycar   [label = "CARON\nAudrey"];
-			ldalby   [label=<DALBY<BR/>Lison<BR/><I>Respo Inté/Event</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			ldalby   [label=<DALBY<BR/>Lison<BR/><I>Respo Inté/Event</I>> @BDE@ penwidth=4 color="yellow"];
 			mlandemaine	[label = "LANDEMAINE\nMathilde"];
 			tbollengier [label = "BOLLENGIER\nThomas"];
 			rbilly		[label = "BILLY\nRobin"];
@@ -82,7 +82,7 @@ subgraph cluster_prod {
 			thomasliess [label = "LIESS\nThomas"];
 			kylianbroha [label = "BROHAN\nKylian"];
 			zelielacres [label = "LACRESSONNIERE\nZélie"];
-			paulinefau 	[label = <FOUVILLE<BR/>Pauline<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			paulinefau 	[label = <FOUVILLE<BR/>Pauline<BR/><I>Respo Communication</I>> @BDE@ penwidth=4 color="pink"];
 			braguin		[label = "RAGUIN\nBertille"];
 			mbenmebarek	[label = "BENMEBAREK\nMohamed"];
 			aletombe	[label = "LETOMBE\nAxel"];
@@ -122,12 +122,12 @@ subgraph cluster_prod {
 			bcagnard 		[label = "CAGNARD\nBrandon"];
 			acampo 			[label = "CAMPOS MAIA\nAlexandre"];
 			jcarville 		[label = "CARVILLE\nJules"];
-			cdeffontaines 	[label = <DEFFONTAINES<BR/>Cyr-Louis<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			cdeffontaines 	[label = <DEFFONTAINES<BR/>Cyr-Louis<BR/><I>Respo Alternants</I>> @BDE@ penwidth=4 color="green"];
 			lerbland 		[label = "ERBLAND\nLouise" penwidth=4 color="purple"];
 			aloonis 		[label = "LOONIS\nAntoine"];
 			ematran 		[label = "MATRAN\nElise"];
 			smechname 		[label = "MECHNAME\nSandra"];
-			csion 			[label =<SION<BR/>Coralie<BR/><I>Gymnase</I>> fillcolor="yellow"];
+			csion 			[label =<SION<BR/>Coralie<BR/><I>Gymnase</I>> @PREZ@];
 			ltherene 		[label = "THERENE\nLoic"];
 			ctourret 		[label = "TOURRET\nConstant"];
 			avasseur 		[label = "VASSEUR\nAlexandre"];
@@ -167,7 +167,7 @@ subgraph cluster_prod {
 			eandouche			[label = "ANDOUCHE\nEtienne"];
 			tcami				[label = "CAMI\nThomas"];
 			mthys				[label = "THYS\nMaximilien"];
-			pgeorgelin			[label = <GEORGELIN<BR/>Paul<BR/><I>Trésorier</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			pgeorgelin			[label = <GEORGELIN<BR/>Paul<BR/><I>Trésorier</I>> @BDE@ penwidth=4 color="yellow"];
 			btom				[label = "BRIOLAT\nTom"];
 			gtom				[label = "GRATTEPANCHE\nTom"];
 		}
@@ -195,8 +195,8 @@ subgraph cluster_prod {
 		leg_parrain	[label = "Parrain"];
 		leg_fillot	[label = "Fillot"];
 		leg_fillotadop	[label = "Fillot Adoptif"];
-		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
-		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> @BDE@];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> @PREZ@];
 		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
 
 		leg_parrain -> leg_fillot;

@@ -30,8 +30,8 @@ digraph gba {
 		leg_parrain	[label = "Parrain"];
 		leg_fillot	[label = "Fillot"];
 		leg_fillotadop	[label = "Fillot Adoptif"];
-		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
-		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> @BDE@];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> @PREZ@];
 		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
 
 		leg_parrain -> leg_fillot;
@@ -43,7 +43,7 @@ digraph gba {
 		fillcolor = "#E0FFE0";
 
 		{ rank = "same";
-			agnescierp	[label = <CIERPKA<BR/>Agnès<BR/><I>Respo Com</I>> fillcolor="#f05050"]; 
+			agnescierp	[label = <CIERPKA<BR/>Agnès<BR/><I>Respo Com</I>> @BDE@]; 
 		}
 
 		{ rank = "same";
@@ -57,14 +57,14 @@ digraph gba {
 		wendieleva -> sarahklay;
 
 		{ rank = "same";
-			raphaelcab	[label = <CABANIS<BR/>Raphael<BR/><I>Inté/Events</I>> fillcolor="#f05050"]; 
-			aureliahe [label = <HENNION<BR/>Aurélia<BR/><I>Polydance</I>> fillcolor="yellow"];
+			raphaelcab	[label = <CABANIS<BR/>Raphael<BR/><I>Inté/Events</I>> @BDE@]; 
+			aureliahe [label = <HENNION<BR/>Aurélia<BR/><I>Polydance</I>> @PREZ@];
 		}
 		sarahklay -> raphaelcab;
 
 		{ rank = "same";
-		capucinelefau [label=<LEFAUCHEUX<BR/>Capucine<BR/><I>Polydance</I>> fillcolor="yellow"];
-			celiacan	[label=<CANDITO<BR/>Celia<BR/><I>BDA</I>> fillcolor="yellow"];
+		capucinelefau [label=<LEFAUCHEUX<BR/>Capucine<BR/><I>Polydance</I>> @PREZ@];
+			celiacan	[label=<CANDITO<BR/>Celia<BR/><I>BDA</I>> @PREZ@];
 		}
 		raphaelcab -> celiacan;
 		aureliahe -> capucinelefau;
@@ -80,53 +80,53 @@ digraph gba {
 			camillenava	[label = "NAVARRO\nCamille"];
 			constancedelann	[label = "DELANNOY\nConstance"];
 			damiendub	[label = "DUBOIS\nDamien"];
-			elodievienn	[label = <VIENNOT BOURGIN<BR/>Élodie<BR/><I>Polydance</I>> fillcolor="yellow"];
-			elodipilu	[label = <PILUDU<BR/>Élodie<BR/><I>L'Huma</I>> fillcolor="yellow"];
+			elodievienn	[label = <VIENNOT BOURGIN<BR/>Élodie<BR/><I>Polydance</I>> @PREZ@];
+			elodipilu	[label = <PILUDU<BR/>Élodie<BR/><I>L'Huma</I>> @PREZ@];
 			fannybern	[label = "BERNARD\nFanny"];
 			guillaumeball	[label = "BALLAND\nGuillaume"];
-			heloiseteil	[label = <TEIL<BR/>Héloise<BR/><I> </I>> fillcolor="#f05050" penwidth=4 color="orange"];
+			heloiseteil	[label = <TEIL<BR/>Héloise<BR/><I> </I>> @BDE@ penwidth=4 color="orange"];
 			irenepaye	[label = "PAYET\nIrène"];
 			joannepradei	[label = "PRADEILLES\nJoanne"];
 			lauraconz	[label = "CONZADE\nLaura"];
 			margothinn	[label = "HINNEKENS\nMargot"];
 			margotthib	[label = "THIBLET\nMargot"];
 			marilysestaeh	[label = "STAEHLE\nMarilyse"];
-			mathildeduprez	[label = <DUPREZ<BR/>Mathilde<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="blue"];
+			mathildeduprez	[label = <DUPREZ<BR/>Mathilde<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="blue"];
 			mathilderamon	[label = "RAMONAS\nMathilde"];
 			maxinebechet	[label = "BECHETOILLE\nMaxine"];
 			melissalegr	[label = "LEGRAND\nMélissa"];
 			nathanpeti	[label = "PETIT\nNathan"];
 			paulineeste	[label = "ESTEVES\nPauline"];
 			raphaellerou	[label = "LE ROUX\nRaphael"];
-			raphaelsusa	[label = <SUSANA<BR/>Raphael<BR/><I>La Comédia<BR/>Le PaF!</I>> fillcolor="yellow" penwidth=4 color="orange"];
-			redacotte	[label = <COTTE-ZARKI<BR/>Reda<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="blue"];
+			raphaelsusa	[label = <SUSANA<BR/>Raphael<BR/><I>La Comédia<BR/>Le PaF!</I>> @PREZ@ penwidth=4 color="orange"];
+			redacotte	[label = <COTTE-ZARKI<BR/>Reda<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="blue"];
 			romanepoy	[label = "POYER\nRomane"];
 			simonadam	[label = "ADAMUS\nSimon"];
 			tonimusto	[label = "MUSTO\nToni"];
 			yasminetabi	[label = "TABIT\nYasmine"];
-			leavanwo	[label = <VANWORMHOUDT<BR/>Léa<BR/><I>La Fanfare</I>> fillcolor="yellow"];
-			victormich	[label = <MICHELON<BR/>Victor<BR/><I>Respo Partenariats/Goodies</I>> fillcolor="#f05050"];
-			learodrigu	[label = <RODRIGUES<BR/>Léa<BR/><I>L'Agri</I>> fillcolor="yellow"];
+			leavanwo	[label = <VANWORMHOUDT<BR/>Léa<BR/><I>La Fanfare</I>> @PREZ@];
+			victormich	[label = <MICHELON<BR/>Victor<BR/><I>Respo Partenariats/Goodies</I>> @BDE@];
+			learodrigu	[label = <RODRIGUES<BR/>Léa<BR/><I>L'Agri</I>> @PREZ@];
 			clotildeguer	[label = "GUERET\nClotilde"];
 			chloebarr	[label = "BARROT\nChloé"];
-			jessicadoss	[label = <DOS SANTOS<BR/>Jessica<BR/><I>Le Studio</I>> fillcolor="yellow"];
+			jessicadoss	[label = <DOS SANTOS<BR/>Jessica<BR/><I>Le Studio</I>> @PREZ@];
 		}
 		celiacan -> elodipilu;
 		capucinelefau -> elodievienn;
 
 		{ rank = "same";
 			alexiscatt	[label = "CATTEAUX\nAlexis"];
-			alicegova	[label = <GOVART<BR/>Alice<BR/><I>Vice-Présidente Externe</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			alicegova	[label = <GOVART<BR/>Alice<BR/><I>Vice-Présidente Externe</I>> @BDE@ penwidth=4 color="deeppink"];
 			aliceleve	[label = "LÉVECQUE\nAlice"];
 			alynehell	[label = "HELLER\nAlyne"];
 			anneambroisinevi[label = "VIOLANTE-CHARBUY\nAnne-Ambroisine"];
 			carolesoul	[label = "SOULIÉ\nCarole"];
 			carolinebisa	[label = "BISAUX\nCaroline"];
 			celiarob	[label = "ROBEAU\nCélia"];
-			claramouf	[label = <MOUFARREJ<BR/>Clara<BR/><I>Prev/DD</I>> fillcolor="#f05050" penwidth=4 color="deeppink"]; 
+			claramouf	[label = <MOUFARREJ<BR/>Clara<BR/><I>Prev/DD</I>> @BDE@ penwidth=4 color="deeppink"]; 
 			coraliemaen	[label = "MAENE\nCoralie"];
 			corentinpine	[label = "PINEAU\nCorentin"];
-			dianemorale	[label = <MORALES<BR/>Diane<BR/><I>Rock</I>> fillcolor="yellow"];
+			dianemorale	[label = <MORALES<BR/>Diane<BR/><I>Rock</I>> @PREZ@];
 			elsamill	[label = "MILLOT\nElsa "];
 			emilerogi	[label = "ROGISSART\nEmile "];
 			emmadelz	[label = "DELZENNE\nEmma"];
@@ -134,28 +134,28 @@ digraph gba {
 			fionaro		[label = "ROYON\nFiona"];
 			fleurforj	[label = "FORJAN\nFleur"];
 			fxpairau	[label = "PAIRAULT\nFrançois-Xavier"];
-			guillaumehoup	[label = <HOUPLAIN<BR/>Guillaume<BR/><I>La Fanfare</I>> fillcolor="yellow"];
+			guillaumehoup	[label = <HOUPLAIN<BR/>Guillaume<BR/><I>La Fanfare</I>> @PREZ@];
 			jessysaill	[label = "SAILLARD\nJessy "];
 			juliedem	[label = "DEMPTOS\nJulie "];
 			juliedou	[label = "DOUARRE\nJulie"];
-			julierull	[label = <RULLIER<BR/>Julie<BR/><I>L'Huma</I>> fillcolor="yellow"];
+			julierull	[label = <RULLIER<BR/>Julie<BR/><I>L'Huma</I>> @PREZ@];
 			julietteseb	[label = "SEBASTIEN\nJuliette "];
 			julievanfer	[label = "VAN FERNEIJ\nJulie "];
 			kadriyealti	[label = "ALTINOK\nKadriye"];
-			lenafitz	[label = <FITZNER<BR/>Lena<BR/><I>BDA</I>> fillcolor="yellow"];
+			lenafitz	[label = <FITZNER<BR/>Lena<BR/><I>BDA</I>> @PREZ@];
 			lenarampa	[label = "RAMPANT\nLéna"];
 			lisalam		[label = "LAMY\nLisa"];
 			lisapapa	[label = "PAPA\nLisa"];
 			louislaho	[label = "LAHOCHE\nLouis"];
-			lucaslecl	[label = <LECLERCQ<BR/>Lucas<BR/><I>BDS</I>> fillcolor="yellow"];
+			lucaslecl	[label = <LECLERCQ<BR/>Lucas<BR/><I>BDS</I>> @PREZ@];
 			luciesava	[label = "SAVARY\nLucie"];
-			manoncar	[label = <CAROULLE<BR/>Manon<BR/><I>Vice-Présidente Interne</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
-			marinecarr	[label = <CARRECHIO<BR/>Marine<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			manoncar	[label = <CAROULLE<BR/>Manon<BR/><I>Vice-Présidente Interne</I>> @BDE@ penwidth=4 color="deeppink"];
+			marinecarr	[label = <CARRECHIO<BR/>Marine<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="deeppink"];
 			marionvey	[label = "VEYLET\nMarion "];
 			matthiasdarib	[label = "DARIBO\nMatthias"];
 			sophiecourc	[label = "COURCOL\nSophie "];
 			thibaultolli	[label = "OLLIVIER\nThibault "];
-			tompurcell	[label = <PURCELL<BR/>Tom<BR/><I>Respo International</I>> fillcolor="#f05050" penwidth=4 color="deeppink"]; 
+			tompurcell	[label = <PURCELL<BR/>Tom<BR/><I>Respo International</I>> @BDE@ penwidth=4 color="deeppink"]; 
 			valentineschei	[label = "SCHEIDLER\nValentine "];
 			veroniquewest	[label = "WESTERLYNCK\nVéronique"];
 			yancyand	[label = "ANDERSON\nYancy"];
@@ -213,14 +213,14 @@ digraph gba {
 		elodievienn -> dianemorale;
 
 		{ rank = "same";
-			alexandrecoul	[label = <COULET<BR/>Alexandre<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			alexandrecoul	[label = <COULET<BR/>Alexandre<BR/><I>Respo Com</I>> @BDE@ penwidth=4 color="purple"];
 			alicefruh	[label = "FRUHAUF\nAlice"];
 			ameliecott	[label = "COTTREZ\nAmélie"];
 			barbara		[label = "BOUET\nBarbara"];
 			capucinechol	[label = "CHOLET\nCapucine"];
 			clemencedion	[label = "DIONISI\nClémence"];
 			eglyne		[label = "Dassbeck\nEglyne"];
-			emeransianedun	[label = <DUNEME<BR/>Emeransiane<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			emeransianedun	[label = <DUNEME<BR/>Emeransiane<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="green"];
 			emilieros	[label = "ROSE\nÉmilie"];
 			flaviecout	[label = "COUTARD\nFlavie"];
 			floriankuhn	[label = "KUHN\nFlorian"];
@@ -249,8 +249,8 @@ digraph gba {
 			oceanewintr	[label = "WINTREBERT\nOcéane"];
 			paulinebret	[label = "BRETONNIERE\nPauline" penwidth=4 color="green"];
 			paulinelerezo	[label = "LE REZOLLIER\nPauline"];
-			rejaneduv	[label = <DUVIEUBOURG<BR/>Réjane<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="purple"];
-			reneerou	[label = <ROUILLARD<BR/>Renée<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			rejaneduv	[label = <DUVIEUBOURG<BR/>Réjane<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="purple"];
+			reneerou	[label = <ROUILLARD<BR/>Renée<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="purple"];
 			rubis		[label = "AON\nRubis"];
 			samantha	[label = "DRUELLE\nSamantha"];
 			sarahnot	[label = "NOTTEAU\nSarah"];
@@ -317,24 +317,24 @@ digraph gba {
 			camillerey	[label = "REYNAT\nCamille" penwidth=4 color="orange"];
 			camillevram	[label = "VRAMBOUDT\nCamille"];
 			camillelef	[label = "LEFEVRE\nCamille"];
-			carolinejero	[label = <JÉRÔME<BR/>Caroline<BR/><I>La Comédia</I>> fillcolor="yellow"];
+			carolinejero	[label = <JÉRÔME<BR/>Caroline<BR/><I>La Comédia</I>> @PREZ@];
 			claragouss	[label = "GOUSSEN\nClara"];
 			cleadrou	[label = "DROUILLOT\nCléa"];
 			clemenceameg	[label = "AMEGANVI\nClémence"];
-			elisabsaibes	[label = <BSAIBES<BR/>Elisa<BR/><I>BDA</I>> fillcolor="yellow"];
-			emmaburgevin	[label = <BURGEVIN<BR/>Emma<BR/><I>L'Agri</I>> fillcolor="yellow"];
+			elisabsaibes	[label = <BSAIBES<BR/>Elisa<BR/><I>BDA</I>> @PREZ@];
+			emmaburgevin	[label = <BURGEVIN<BR/>Emma<BR/><I>L'Agri</I>> @PREZ@];
 			gaelanemass	[label = "MASSON\nGaelane"];
 			hyndechak	[label = "CHAKOUR\nHynde"];
 			julieguille	[label = "GUILLEMOT\nJulie"];
 			juliennask	[label = "NASKAS\nJulien"];
-			klervyprov	[label = <PROVOST<BR/>Klervy<BR/><I>L'Huma</I>> fillcolor="yellow"];
-			lauraollivier	[label = <OLLIVIER<BR/>Laura<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			klervyprov	[label = <PROVOST<BR/>Klervy<BR/><I>L'Huma</I>> @PREZ@];
+			lauraollivier	[label = <OLLIVIER<BR/>Laura<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="yellow"];
 			laurepeno	[label = "PENOCHET\nLaure"];
 			leaduquen	[label = "DUQUENNE\nLéa"];
 			leanacast	[label = "CASTELAN\nLéana"];
-			leofalie	[label = <FALIEZ<BR/>Léo<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			leofalie	[label = <FALIEZ<BR/>Léo<BR/><I>Respo Com</I>> @BDE@ penwidth=4 color="yellow"];
 			lothairegod	[label = "GODDEERIS\nLothaire"];
-			louannaheb	[label = <HEBERT<BR/>Lou-Anna<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			louannaheb	[label = <HEBERT<BR/>Lou-Anna<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="yellow"];
 			louanneferrei	[label = "FERREIRA DA SILVA\nLou-anne"];
 			loucahac	[label = "HACQUART\nLouca"];
 			luanepieau	[label = "PIEAU\nLuane" penwidth=4 color="orange"];
@@ -348,16 +348,16 @@ digraph gba {
 			marionboudon	[label = "BOUDON\nMarion"];
 			marionguill	[label = "GUILLOU\nMarion"];
 			mathildetech [label = "TECHER\nMathilde"];
-			maximeisr	[label = <ISRAËL<BR/>Maxime<BR/><I>La Radio</I>> fillcolor="yellow"];
+			maximeisr	[label = <ISRAËL<BR/>Maxime<BR/><I>La Radio</I>> @PREZ@];
 			maylisspers	[label = "PERSYN\nMayliss"];
 			michellepers	[label = "PERSAN\nMichelle"];
-			milamarech	[label = <MARECHAL<BR/>Mila<BR/><I>Vice-Présidente Interne</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			milamarech	[label = <MARECHAL<BR/>Mila<BR/><I>Vice-Présidente Interne</I>> @BDE@ penwidth=4 color="yellow"];
 			myriambouzamb	[label = "BOUZAMBOU\nMyriam"];
 			noemiedutau	[label = "DUTAUD\nNoémie"];
 			ronanrautu	[label = "RAUTUREAU\nRonan"];
 			sachagourd	[label = "GOURDIN\nSacha"];
 			solenetapr	[label = "TAPREST\nSolène"];
-			suzanedesc	[label = <DESCHODT CRESPEL<BR/>Suzane<BR/><I>Pompoms</I>> fillcolor="yellow"];
+			suzanedesc	[label = <DESCHODT CRESPEL<BR/>Suzane<BR/><I>Pompoms</I>> @PREZ@];
 			zoelovi		[label = "LOVINY\nZoé"];
 		}
 		alexandrecoul -> hyndechak;
@@ -418,13 +418,13 @@ digraph gba {
 							<tr><td border="0">PHILIPPE<BR/>Chloé</td></tr>
 							<tr><td border="4" color="purple"><I>Respo PeiP</I></td></tr>
 							<tr><td border="4" color="pink"><I>Respo Inté/Events</I></td></tr>
-						</table>> fillcolor="#f05050"];
+						</table>> @BDE@];
 			chloepot		[label = "POTTIER\nChloé" penwidth=4 color="#2128f5"];
 			clemencebou	[label = "BOUSQUET\nClémence"];
 			elinemarion		[label = "MARION\nEline"];
 			eliseoger	[label = "OGER\nElise"];
 			emelinebal		[label = "BALESSE\nEmeline"];
-			evamout	[label = <MOUVAUX<BR/>Eva<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			evamout	[label = <MOUVAUX<BR/>Eva<BR/><I>Respo Inté/Events</I>> @BDE@ penwidth=4 color="pink"];
 			jadecour		[label = "COURVOISIER\nJade"];
 			jademelet	[label = "MELET\nJade"];
 			jeanbaptiste		[label = "CORDIER\nJean-Baptiste"];
@@ -432,12 +432,12 @@ digraph gba {
 			juliettemoe		[label = "MOERMAN\nJuliette"];
 			julietteweb [label = "WEBER\nJuliette"];
 			justinebous	[label = "BOUSCHET\nJustine"];
-			justinerobi		[label = <ROBIQUET<BR/>Justine<BR/><I>EESTEC</I>> fillcolor="yellow" penwidth=4 color="#2128f5"];
+			justinerobi		[label = <ROBIQUET<BR/>Justine<BR/><I>EESTEC</I>> @PREZ@ penwidth=4 color="#2128f5"];
 			leapatta	[label = "PATTARD\nLéa"];
-			leanemar		[label = <MARTIN<BR/>Léane<BR/><I>10^5</I>> fillcolor="yellow"];
+			leanemar		[label = <MARTIN<BR/>Léane<BR/><I>10^5</I>> @PREZ@];
 			lenacas	[label = "CASALI\nLéna"];
 			lenamar		[label = "MARTINEZ\nLéna"];
-			lisatac	[label = <TACAIL<BR/>Lisa<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			lisatac	[label = <TACAIL<BR/>Lisa<BR/><I>Respo Communication</I>> @BDE@ penwidth=4 color="pink"];
 			louisecorm		[label = "CORMONT\nLouise"];
 			lucaslaur	[label = "LAURENT\nLucas"];
 			maelleherv		[label = "HERVE\nMaëlle"];
@@ -448,7 +448,7 @@ digraph gba {
 			matthisvan	[label = "VANTOMME\nMatthis"];
 			melanierev		[label = "REVOL\nMélanie"];
 			paulinelam	[label = "LAMBERT\nPauline"];
-			remiletoil		[label = <LETOILE<BR/>Rémi<BR/><I>Rock</I>> fillcolor="yellow"];
+			remiletoil		[label = <LETOILE<BR/>Rémi<BR/><I>Rock</I>> @PREZ@];
 			sarahmart	[label = "MARTIN\nSarah"];
 			sofianmert		[label = "MERTENS\nSofian"];
 			timotheeha	[label = "HAMBLIN\nTImothée"];
@@ -510,18 +510,18 @@ digraph gba {
     
     { rank="same";
 		xtroulier	[label = "TROULIER\nXavier"];
-		mkson		[label = <KSON<BR/>Marion<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+		mkson		[label = <KSON<BR/>Marion<BR/><I>Respo Communication</I>> @BDE@ penwidth=4 color="purple"];
 		mfievet		[label = "FIEVET\nMartin"];
 		tcarton		[label = "CARTON\nThéo"];
-		amaury		[label = <MAURY<BR/>Amandine<BR/><I>Secrétaire</I>> fillcolor="#f05050" penwidth=4 color="green"];
+		amaury		[label = <MAURY<BR/>Amandine<BR/><I>Secrétaire</I>> @BDE@ penwidth=4 color="green"];
 		ekaag		[label = "KAAG\nEnola"];
-		ngonzalez	[label = <GONZALEZ<BR/>Nathan<BR/><I>Respo DD/Prev</I>> fillcolor="#f05050" penwidth=4 color="green"];
+		ngonzalez	[label = <GONZALEZ<BR/>Nathan<BR/><I>Respo DD/Prev</I>> @BDE@ penwidth=4 color="green"];
 		mtrobo		[label = "TROBO\nMay-Linn" penwidth=4 color="purple"];
-		edurand		[label = <DURAND<BR/>Emilie<BR/><I>Pompoms</I>> penwidth=4 color="purple" fillcolor="yellow"];
-		cbellanger	[label = <BELLANGER<BR/>Cylia<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+		edurand		[label = <DURAND<BR/>Emilie<BR/><I>Pompoms</I>> penwidth=4 color="purple" @PREZ@];
+		cbellanger	[label = <BELLANGER<BR/>Cylia<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="purple"];
 		hlorin		[label = "LORIN\nHugo" penwidth=4 color="purple"];
-		charzic		[label = <HARZIC<BR/>Clémence<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="green"];
-		labravanel	[label = <ABRAVANEL<BR/>Lina<BR/><I>Vice-présidente / Respo International</I>> fillcolor="#f05050" penwidth=4 color="green"];
+		charzic		[label = <HARZIC<BR/>Clémence<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="green"];
+		labravanel	[label = <ABRAVANEL<BR/>Lina<BR/><I>Vice-présidente / Respo International</I>> @BDE@ penwidth=4 color="green"];
 		eoukaddour	[label = "OUKADDOUR\nElias"];
 		hdauphin	[label = "DAUPHIN\nHéloïse"];
 		lcombasson	[label = "COMBASSON\nLouisa"];
@@ -536,7 +536,7 @@ digraph gba {
 		sdissart	[label = "DISSART\nSolène"];
 		lfavrou		[label = "FAVROU\nLaura"];
 		mingabire	[label = "INNGABIRE\nMicky-Yolaine"];
-		samore		[label = <AMORE<BR/>Solène<BR/><I>Rock</I>> fillcolor="yellow"];
+		samore		[label = <AMORE<BR/>Solène<BR/><I>Rock</I>> @PREZ@];
 		achaumat	[label = "CHAUMAT\nAntonin"];
 		amonlouis	[label = "MONLOUIS\nAlysée"];
 		cchopin		[label = "CHOPIN\nChloé"];
@@ -590,15 +590,15 @@ digraph gba {
 				slegesse		[label = "LEGESSE\nSalomé"];
 				ohourdin		[label = "HOURDIN\nOcéane"];
 				froutier		[label = "ROUTIER\nFlore"];
-				mguichard		[label = <GUICHARD<BR/>Marion<BR/><I>Vice Présidente / Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+				mguichard		[label = <GUICHARD<BR/>Marion<BR/><I>Vice Présidente / Respo Rézo</I>> @BDE@ penwidth=4 color="yellow"];
 				ecarle			[label = "CARLE\nEmma"];
 				ltronto			[label = "TRONTO\nLorena"];
 				mbaey			[label = "BAEY\nMathilde"];
-				jboisrame		[label = <BOISRAME<BR/>Julie<BR/><I>Respo Club</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+				jboisrame		[label = <BOISRAME<BR/>Julie<BR/><I>Respo Club</I>> @BDE@ penwidth=4 color="yellow"];
 				mduthoit		[label = "DUTHOIT\nManon"];
 				mdufour			[label = "DUFOUR\nManon"];
 				abreton			[label = "BRETON\nAliénor"];
-				rdufour			[label = <DUFOUR<BR/>Rémy<BR/><I>Respo Club</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+				rdufour			[label = <DUFOUR<BR/>Rémy<BR/><I>Respo Club</I>> @BDE@ penwidth=4 color="yellow"];
 				nleroy			[label = "LEROY\nNicolas"];
 				aboterman		[label = "BOTERMAN\nArthur"];
 				}
