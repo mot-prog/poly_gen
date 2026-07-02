@@ -61,4 +61,4 @@ Certains d'entre nous se font adopter, ça arrive, c'est la vie. Pour remédier 
 
 Vous pouvez ajouter autant de liens qu'il le faut, ne faites juste pas un sac de nœuds :)  
 
-# Bon courage et vive Polytech'Lille ! 🦊️
+# Bon courage et vive Polytech'Lille ! 🦊️  
