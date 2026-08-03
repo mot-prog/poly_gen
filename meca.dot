@@ -20,7 +20,7 @@ digraph meca {
 		color = none;
 		node [shape = none];
 
-		"2012" -> "2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026"->"2027";
+		"2012" -> "2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026" -> "2027" -> "2028";
 	}
     	subgraph cluster_legende {
 		label = "Légende";
@@ -40,6 +40,10 @@ digraph meca {
 	subgraph cluster_meca {
 		label = "Mécanique";
 		fillcolor = "#E0E0FF";
+
+///////////////////////
+// ---- 2012 ---- 
+///////////////////////
 
 		{ rank = "same";//2012
 			slyper		[label = <Slyper<BR/><I>Vice-Président</I>>  @BDE@];
@@ -450,7 +454,7 @@ digraph meca {
 			theogamb->mathildeva;
 			williambodd->eliotpott;
 			yonamdc->aubinvairel;
-{ rank = "same";//2026
+		{ rank = "same";//2026
 			maelb		[label = "B\nMael"];
 			mkernec		[label = "KERNEC\nMartin"];
 			adebas		[label = <DEBAS<BR/>Antoine<BR/><I>Inté/Events</I>> @BDE@ penwidth=4 color="green"];
@@ -545,6 +549,60 @@ digraph meca {
 			lsabin -> gdelanoe [penwidth=2 color = "#f05050"];
 			qsousa -> lducoura;
 			adebas2 -> atalon;
+
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+
+	{ rank = "same";//2028
+		etivollier  [label = "TIVOLLIER\nEliott"];
+		anoorbig    [label = "NOORBIG\nAhmad Al"];
+		plallement  [label = "LALLEMENT\nPietre"];
+		pconstantin [label = "CONSTANTIN\nPaul"];
+		lghesquiere [label = "GHESQUIÈRE\nLilian"];
+		cvigneron   [label = "VIGNERON\nClément"];
+		yhardouin   [label = "HARDOUIN\nYoann"];
+		mroger      [label = "ROGER\nMathurin"];
+		jtousch     [label = "TOUSCH\nJulien"];
+		hlengoye    [label = "LENGOYE\nHelene"];
+		dberti      [label = "Berti\nDamien"];
+		aaboutarik  [label = "ABOUTARIK\nAyman"];
+		zlambert    [label = "LAMBERT\nZoé"];
+		iabed       [label = "ABED\nIliès"];
+		tmontagne   [label = "MONTAGNE\nThomas"];
+		eremy       [label = "REMY\nEliott"];
+		alaforest   [label = "Laforest\nAurélie"];
+		jfayet      [label = "Fayet\nJosselyn"];
+		cmariette   [label = "MARIETTE\nConstant"];
+		lhak        [label = "HAK\nLéo"];
+		nroy        [label = "ROY\nnoéline"];
+		nrocher     [label = "ROCHER\nNicolas"];
+		priche      [label = "Riche\nPhilippe"];
+		tflageolet  [label = "FLAGEOLET\nThomas"];
+		lnadler     [label = "NADLER\nLucas"];
+
+		}
+
+		ariom -> etivollier
+		tboutros->plallement;
+		hkhaif->pconstantin; // parrain n'est pas sur l'arbre
+		nliadouze->cvigneron;
+		atalon->yhardouin;
+		tboutros->mroger;
+		atalon->jtousch;//!!
+		gdelanoe->jtousch;//!! deux parrain
+		// Helene LENGOYE -> R A S
+		lducoura->dberti;
+		adebas->aaboutarik;
+		mcarnelez->zlambert; // parrain n'est pas sur l'arbre
+		atalon->eremy;
+		echampignon->alaforest;//!!
+		rmarchan->jfayet;
+		vvampoui->cmariette;
+		atalon->jtousch2;
+		antonvil->nroy;
+		iabed ->nrocher;
+
 			}
 
 	endnode [style=invis];
