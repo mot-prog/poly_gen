@@ -179,6 +179,53 @@ subgraph cluster_prod {
 		cdeffontaines -> pgeorgelin [penwidth=2 color = "#f05050"];
 		jcarville -> btom;
 		jcarville -> gtom;
+
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+
+		{ rank = "same";//2028
+		lborel        [label = "Borel\nLucas"];
+		ahedar        [label = "HEDAR\nAchraf"];
+		esenicourt    [label = "SENICOURT\nElise"];
+		cverhaeghe    [label = "Verhaeghe\nCharles"];
+		yellart       [label = "Ellart\nYani"];
+		hlial         [label = "LIAL\nHugo"];
+		gpruvost      [label = "Pruvost\nGuillaume"];
+		cfriscourt    [label = "FRISCOURT\nCharlise"];
+		znakro        [label = "NAKRO\nZineb"];
+		hgodefroy     [label = "Godefroy\nHector"];
+		mlilie        [label = "Lilie\nmouquet"];
+		mrieu         [label = "RIEU\nMarius"];
+		mcarpentier   [label = "Carpentier\nMathéo"];
+		scourtade     [label = "COURTADE\nSimon"];
+		hbeauzamy     [label = "BEAUZAMY\nHugo"];
+		bcouppoussamy [label = "COUPPOUSSAMY\nBALA"];
+		pflajolet     [label = "Flajolet\npaul"];
+		sjeunier      [label = "JEUNIER\nSimon"];
+		lcoussemacq   [label = "COUSSEMACQ\nLouis"];
+		lgutowski     [label = "GUTOWSKI\nLaura"];
+		aleroy        [label = "Leroy\nAlexandre"];
+		}
+
+		eandouche->lborel;
+		opatissier->esenicourt;
+		esasorith->yellart;  // parrain n'est pas sur l'arbre
+		drichard->gpruvost; // parrain n'est pas sur l'arbre
+		btom->cfriscourt;
+		gtom->znakro;
+		obeutter->hgodefroy;//!!
+		obeutter->mlilie;//!!!!
+		thomas->mlilie;//!!!
+		romy->mlilie;//!!!
+		scourtade->mrieu;//!!!
+		nnauzeret->mcarpentier; // parrain n'est pas sur l'arbre
+		mrieu->scourtade;//!!!
+		hdemaret->hbeauzamy; // parrain n'est pas sur l'arbre
+		mthys->bcouppoussamy;
+		tcami->lcoussemacq;
+		adecaestecker->aleroy;
+
 	}
 	subgraph cluster_promos {
 		label = "Promos";
@@ -186,7 +233,7 @@ subgraph cluster_prod {
 		color = none;
 		node [shape = none];
 
-		"2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+		"2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
 	}
 	subgraph cluster_legende {
 		label = "Légende";
