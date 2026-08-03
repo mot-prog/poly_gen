@@ -20,7 +20,7 @@ digraph mat {
 		color = none;
 		node [shape = none];
 
-		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
 	}
 		subgraph cluster_legende {
 		label = "Légende";
@@ -511,6 +511,33 @@ digraph mat {
 			ldelahaye->mdegroote;
 			sklis->jgagner;
 
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+		
+{ rank = "same";//2028
+			bnathan		[label = "Bomy\nNathan"];
+			sjr         [label = "Sami\nJr."];
+			sguillaume  [label = "SALLÉ\nGuillaume"];
+			rlucien     [label = "Roullet\nLucien"];
+			bmael       [label = <Bouvier-Thébault<BR/>Maël<BR/><I>Neandertech(VP)</I>>@NEAN@]; //!!!!!!!
+			pkentin     [label = "PICO\nKentin"];//!!!!!!
+			gjulia      [label = "Gagner\nJulia"];
+			gyann       [label = "Gastinel\nYann"];
+			mromane     [label = "MIKOLAJCZYK\nRomane"];
+			balexandre  [label = "BROGNIART\nAlexandre"];
+
+
+		}
+			htrouillard->bnathan;
+			sboukal->sjr;
+			lcapra->bmael; // elle a deux parrain !!!!!!!!!!!
+			bpeyrard->bmael;/!!!! (le parrain n'est pas enregistrer)
+			lcapra->pkentin; // 2 parrain
+			arondeau->pkentin; //!!
+			tcolras->gjulia;
+			bange->gyann; // !!! (parrain n'existe pas sur l'arbre)
+			gdelbe->mromane // !!!! (parrain n'existe pas)
 
 	}
 	endnode [style=invis];
