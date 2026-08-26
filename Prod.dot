@@ -185,46 +185,54 @@ subgraph cluster_prod {
 ///////////////////////
 
 		{ rank = "same";//2028
-		lborel        [label = "Borel\nLucas"];
-		ahedar        [label = "HEDAR\nAchraf"];
-		esenicourt    [label = "SENICOURT\nElise"];
-		cverhaeghe    [label = "Verhaeghe\nCharles"];
-		yellart       [label = "Ellart\nYani"];
-		hlial         [label = "LIAL\nHugo"];
-		gpruvost      [label = "Pruvost\nGuillaume"];
-		cfriscourt    [label = "FRISCOURT\nCharlise"];
-		znakro        [label = "NAKRO\nZineb"];
-		hgodefroy     [label = "Godefroy\nHector"];
-		mlilie        [label = "Lilie\nmouquet"];
-		mrieu         [label = "RIEU\nMarius"];
-		mcarpentier   [label = "Carpentier\nMathéo"];
-		scourtade     [label = "COURTADE\nSimon"];
-		hbeauzamy     [label = "BEAUZAMY\nHugo"];
-		bcouppoussamy [label = "COUPPOUSSAMY\nBALA"];
-		pflajolet     [label = "Flajolet\npaul"];
-		sjeunier      [label = "JEUNIER\nSimon"];
-		lcoussemacq   [label = "COUSSEMACQ\nLouis"];
-		lgutowski     [label = "GUTOWSKI\nLaura"];
-		aleroy        [label = "Leroy\nAlexandre"];
+			lborel        [label = "BOREL\nLucas"];
+			ahedar        [label = "HEDAR\nAchraf"];
+			esenicourt    [label = "SENICOURT\nElise"];
+			cverhaeghe    [label = "VERHAEGHE\nCharles"];
+			yellart       [label = "ELLART\nYani"];
+			hlial         [label = "LIAL\nHugo"];
+			gpruvost      [label = "PRUVOST\nGuillaume"];
+			cfriscourt    [label = "FRISCOURT\nCharlise"];
+			znakro        [label = "NAKRO\nZineb"];
+			hgodefroy     [label = <GODEFROY<BR/>Hector<BR/><I>Respo alternant</I>> @BDE@ penwidth=4 color="red"];
+			mlilie        [label = <MOUQUET<BR/>Lilie<BR/><I>Communication et alternant</I>> @BDE@ penwidth=4 color="blue"];
+			mrieu         [label = "RIEU\nMarius"];
+			mcarpentier   [label = "CARPENTIER\nMathéo"];
+			scourtade     [label = "COURTADE\nSimon"];
+			hbeauzamy     [label = "BEAUZAMY\nHugo"];
+			bcouppoussamy [label = "COUPPOUSSAMY\nBala"];
+			pflajolet     [label = "FLAJOLET\nPaul"];
+			sjeunier      [label = "JEUNIER\nSimon"];
+			lcoussemacq   [label = "COUSSEMACQ\nLouis"];
+			lgutowski     [label = "GUTOWSKI\nLaura"];
+			aleroy        [label = "LEROY\nAlexandre"];
 		}
 
-		eandouche->lborel;
-		opatissier->esenicourt;
-		esasorith->yellart;  // parrain n'est pas sur l'arbre
-		drichard->gpruvost; // parrain n'est pas sur l'arbre
-		btom->cfriscourt;
-		gtom->znakro;
-		obeutter->hgodefroy;//!!
-		obeutter->mlilie;//!!!!
-		thomas->mlilie;//!!!
-		romy->mlilie;//!!!
-		scourtade->mrieu;//!!!
-		nnauzeret->mcarpentier; // parrain n'est pas sur l'arbre
-		mrieu->scourtade;//!!!
-		hdemaret->hbeauzamy; // parrain n'est pas sur l'arbre
-		mthys->bcouppoussamy;
-		tcami->lcoussemacq;
-		adecaestecker->aleroy;
+		// Liens de parrainage classique
+		eandouche -> lborel;
+		opatissier -> esenicourt;
+		esasorith -> yellart;       // parrain n'est pas sur l'arbre
+		drichard -> gpruvost;       // parrain n'est pas sur l'arbre
+		btom -> cfriscourt;
+		gtom -> znakro;
+		obeutter -> hgodefroy;
+		obeutter -> mlilie;
+		thomas -> mlilie;           // mentionné comme "Thomas ?"
+		romy -> mlilie;             // mentionné comme "Romy ?"
+		scourtade -> mrieu;
+		nnauzeret -> mcarpentier;   // parrain n'est pas sur l'arbre
+		mrieu -> scourtade;
+		hdemaret -> hbeauzamy;      // parrain n'est pas sur l'arbre
+		mthys -> bcouppoussamy;
+		tcami -> lcoussemacq;
+		adecaestecker -> aleroy;
+
+		// Liens de parrainage adoptif
+		fmayet -> cverhaeghe [style=dashed];        // parrain adoptif n'est pas sur l'arbre
+		btom -> znakro [style=dashed];
+		adecaestecker -> hgodefroy [style=dashed];
+		gtom -> bcouppoussamy [style=dashed];
+		tcami -> aleroy [style=dashed];
 
 	}
 	subgraph cluster_promos {

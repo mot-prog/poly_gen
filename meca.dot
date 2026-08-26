@@ -555,54 +555,56 @@ digraph meca {
 ///////////////////////
 
 	{ rank = "same";//2028
-		etivollier  [label = "TIVOLLIER\nEliott"];
-		anoorbig    [label = "NOORBIG\nAhmad Al"];
+		etivollier  [label = <TIVOLLIER<BR/>Eliott<BR/><I> </I>> penwidth=4 color="orange"];
+		anoorbig    [label = <NOORBIG<BR/>Ahmad Al<BR/><I>Robotech</I>> @PREZ@];
 		plallement  [label = "LALLEMENT\nPietre"];
-		pconstantin [label = "CONSTANTIN\nPaul"];
+		pconstantin [label = <CONSTANTIN<BR/>Paul<BR/><I>Race</I>> @PREZ@ penwidth=4 color="pink"];
 		lghesquiere [label = "GHESQUIÈRE\nLilian"];
 		cvigneron   [label = "VIGNERON\nClément"];
-		yhardouin   [label = "HARDOUIN\nYoann"];
+		yhardouin   [label = <HARDOUIN<BR/>Yoann<BR/><I>Inté-Event</I>> @BDE@ penwidth=4 color="purple"];
 		mroger      [label = "ROGER\nMathurin"];
-		jtousch     [label = "TOUSCH\nJulien"];
-		hlengoye    [label = "LENGOYE\nHelene"];
-		dberti      [label = "Berti\nDamien"];
-		aaboutarik  [label = "ABOUTARIK\nAyman"];
+		jtousch     [label = <TOUSCH<BR/>Julien<BR/><I>Communication</I>> @BDE@ penwidth=4 color="purple"];
+		hlengoye    [label = "LENGOYE\nHélène"];
+		dberti      [label = <BERTI<BR/>Damien<BR/><I>Parts/Goodies</I>> @BDE@ penwidth=4 color="blue"];
+		aaboutarik  [label = <ABOUTARIK<BR/>Ayman<BR/><I> </I>> penwidth=4 color="purple"];
 		zlambert    [label = "LAMBERT\nZoé"];
 		iabed       [label = "ABED\nIliès"];
-		tmontagne   [label = "MONTAGNE\nThomas"];
-		eremy       [label = "REMY\nEliott"];
-		alaforest   [label = "Laforest\nAurélie"];
-		jfayet      [label = "Fayet\nJosselyn"];
+		tmontagne   [label = <MONTAGNE<BR/>Thomas<BR/><I>Event BDS</I>> @PREZ@ penwidth=4 color="pink"];
+		eremy       [label = <REMY<BR/>Eliott<BR/><I>Pôle DD</I>> @BDE@ penwidth=4 color="purple"];
+		alaforest   [label = <LAFOREST<BR/>Aurélie<BR/><I> </I>> penwidth=4 color="pink"];
+		jfayet      [label = <FAYET<BR/>Josselyn<BR/><I>Trésorier</I>> @BDE@ penwidth=4 color="blue"];
 		cmariette   [label = "MARIETTE\nConstant"];
 		lhak        [label = "HAK\nLéo"];
-		nroy        [label = "ROY\nnoéline"];
+		nroy        [label = <ROY<BR/>Noéline<BR/><I>Team prev</I>> @BDE@ penwidth=4 color="blue"];
 		nrocher     [label = "ROCHER\nNicolas"];
-		priche      [label = "Riche\nPhilippe"];
-		tflageolet  [label = "FLAGEOLET\nThomas"];
+		priche      [label = "RICHE\nPhilippe"];
+		tflageolet  [label = <FLAGEOLET<BR/>Thomas<BR/><I> </I>> penwidth=4 color="pink"];
 		lnadler     [label = "NADLER\nLucas"];
+	}
 
-		}
+		// Liens de parrainage classique
+		ariom -> etivollier;
+		tboutros -> plallement;
+		hkhaif -> pconstantin; // parrain n'est pas sur l'arbre
+		nliadouze -> cvigneron;
+		atalon -> yhardouin;
+		tboutros -> mroger;
+		atalon -> jtousch;
+		gdelanoe -> jtousch;
+		lducoura -> dberti;
+		adebas -> aaboutarik;
+		mcarnelez -> zlambert; // parrain n'est pas sur l'arbre
+		atalon -> eremy;
+		echampig -> alaforest; // Correction de echampignon
+		rmarchan -> jfayet;
+		vvampoui -> cmariette;
+		antonvil -> nroy;
+		iabed -> nrocher;
 
-		ariom -> etivollier
-		tboutros->plallement;
-		hkhaif->pconstantin; // parrain n'est pas sur l'arbre
-		nliadouze->cvigneron;
-		atalon->yhardouin;
-		tboutros->mroger;
-		atalon->jtousch;//!!
-		gdelanoe->jtousch;//!! deux parrain
-		// Helene LENGOYE -> R A S
-		lducoura->dberti;
-		adebas->aaboutarik;
-		mcarnelez->zlambert; // parrain n'est pas sur l'arbre
-		atalon->eremy;
-		echampignon->alaforest;//!!
-		rmarchan->jfayet;
-		vvampoui->cmariette;
-		atalon->jtousch2;
-		antonvil->nroy;
-		iabed ->nrocher;
-
+		// Liens de parrainage adoptif (nouveaux ajouts)
+		dmouron -> dberti [style=dashed]; // Mouron Driss n'est pas sur l'arbre
+		fgerard -> alaforest [style=dashed]; // Fiona Gerard n'est pas sur l'arbre
+		breynaud -> jfayet [style=dashed];
 			}
 
 	endnode [style=invis];

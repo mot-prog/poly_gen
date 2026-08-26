@@ -511,34 +511,36 @@ digraph mat {
 			ldelahaye->mdegroote;
 			sklis->jgagner;
 
+		
 ///////////////////////
 // ---- 2028 ---- 
 ///////////////////////
 		
-{ rank = "same";//2028
-			bnathan		[label = "Bomy\nNathan"];
-			sjr         [label = "Sami\nJr."];
+		{ rank = "same";//2028
+			bnathan		[label = "BOMY\nNathan"];
+			sjr         [label = "SAMI\nJr."];
 			sguillaume  [label = "SALLÉ\nGuillaume"];
-			rlucien     [label = "Roullet\nLucien"];
-			bmael       [label = <Bouvier-Thébault<BR/>Maël<BR/><I>Neandertech(VP)</I>>@NEAN@]; //!!!!!!!
-			pkentin     [label = "PICO\nKentin"];//!!!!!!
-			gjulia      [label = "Gagner\nJulia"];
-			gyann       [label = "Gastinel\nYann"];
+			rlucien     [label = "ROULLET\nLucien"];
+			bmael       [label = <BOUVIER-THÉBAULT<BR/>Maël<BR/><I>Vice président</I>> @BDE@ @NEAN@]; 
+			pkentin     [label = <PICO<BR/>Kentin<BR/><I>Inté-events</I>> @BDE@ @NEAN@];
+			gjulia      [label = "GAGNER\nJulia"];
+			gyann       [label = <GASTINEL<BR/>Yann<BR/><I>Inté-évent</I>> @BDE@ @MILLE@];
 			mromane     [label = "MIKOLAJCZYK\nRomane"];
 			balexandre  [label = "BROGNIART\nAlexandre"];
-
-
 		}
-			htrouillard->bnathan;
-			sboukal->sjr;
-			lcapra->bmael; // elle a deux parrain !!!!!!!!!!!
-			bpeyrard->bmael;/!!!! (le parrain n'est pas enregistrer)
-			lcapra->pkentin; // 2 parrain
-			arondeau->pkentin; //!!
-			tcolras->gjulia;
-			bange->gyann; // !!! (parrain n'existe pas sur l'arbre)
-			gdelbe->mromane // !!!! (parrain n'existe pas)
 
+		// Liens de parrainage classique
+		htrouillard -> bnathan;
+		sboukal -> sjr;
+		lcapra -> bmael; 
+		lcapra -> pkentin; 
+		tcolras -> gjulia;
+		bange -> gyann; // Parrain non présent sur l'arbre
+		gdelbe -> mromane; // Parrain non présent sur l'arbre
+
+		// Liens de parrainage adoptif / second parrain
+		bpeyrard -> bmael [style=dashed]; // Parrain non présent sur l'arbre
+		arondeau -> pkentin [style=dashed];
 	}
 	endnode [style=invis];
 
