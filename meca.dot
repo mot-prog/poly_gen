@@ -587,14 +587,14 @@ digraph meca {
 		tboutros -> plallement;
 		hkhaif -> pconstantin; // parrain n'est pas sur l'arbre
 		nliadouze -> cvigneron;
-		atalon -> yhardouin;
+		atalon -> yhardouin [penwidth=2 color = "#f05050"];
 		tboutros -> mroger;
-		atalon -> jtousch;
-		gdelanoe -> jtousch;
+		atalon -> jtousch [penwidth=2 color = "#f05050"];
+		gdelanoe -> jtousch [penwidth=2 color = "#f05050"];
 		lducoura -> dberti;
 		adebas -> aaboutarik;
 		mcarnelez -> zlambert; // parrain n'est pas sur l'arbre
-		atalon -> eremy;
+		atalon -> eremy [penwidth=2 color = "#f05050"];
 		echampig -> alaforest; // Correction de echampignon
 		rmarchan -> jfayet;
 		vvampoui -> cmariette;
@@ -604,7 +604,7 @@ digraph meca {
 		// Liens de parrainage adoptif (nouveaux ajouts)
 		dmouron -> dberti [style=dashed]; // Mouron Driss n'est pas sur l'arbre
 		fgerard -> alaforest [style=dashed]; // Fiona Gerard n'est pas sur l'arbre
-		breynaud -> jfayet [style=dashed];
+		breynaud -> jfayet [style=dashed penwidth=2 color = "#f05050"];
 			}
 
 	endnode [style=invis];
