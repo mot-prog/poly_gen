@@ -555,8 +555,8 @@ digraph meca {
 ///////////////////////
 
 	{ rank = "same";//2028
-		etivollier  [label = <TIVOLLIER<BR/>Eliott<BR/><I> </I>> penwidth=4 color="orange"];
-		anoorbig    [label = <NOORBIG<BR/>Ahmad Al<BR/><I>Robotech</I>> @PREZ@];
+		etivollier  [label = <TIVOLLIER<BR/>Eliott> penwidth=4 color="orange"];
+		anoorbig    [label = <NOORBIG<BR/>Ahmad Al<BR/><I>Robotech (Resp meca)</I>>];
 		plallement  [label = "LALLEMENT\nPietre"];
 		pconstantin [label = <CONSTANTIN<BR/>Paul<BR/><I>Race</I>> @PREZ@ penwidth=4 color="pink"];
 		lghesquiere [label = "GHESQUIÈRE\nLilian"];
@@ -566,19 +566,19 @@ digraph meca {
 		jtousch     [label = <TOUSCH<BR/>Julien<BR/><I>Communication</I>> @BDE@ penwidth=4 color="purple"];
 		hlengoye    [label = "LENGOYE\nHélène"];
 		dberti      [label = <BERTI<BR/>Damien<BR/><I>Parts/Goodies</I>> @BDE@ penwidth=4 color="blue"];
-		aaboutarik  [label = <ABOUTARIK<BR/>Ayman<BR/><I> </I>> penwidth=4 color="purple"];
+		aaboutarik  [label = <ABOUTARIK<BR/>Ayman> penwidth=4 color="purple"];
 		zlambert    [label = "LAMBERT\nZoé"];
 		iabed       [label = "ABED\nIliès"];
 		tmontagne   [label = <MONTAGNE<BR/>Thomas<BR/><I>Event BDS</I>> @PREZ@ penwidth=4 color="pink"];
 		eremy       [label = <REMY<BR/>Eliott<BR/><I>Pôle DD</I>> @BDE@ penwidth=4 color="purple"];
-		alaforest   [label = <LAFOREST<BR/>Aurélie<BR/><I> </I>> penwidth=4 color="pink"];
+		alaforest   [label = <LAFOREST<BR/>Aurélie> penwidth=4 color="pink"];
 		jfayet      [label = <FAYET<BR/>Josselyn<BR/><I>Trésorier</I>> @BDE@ penwidth=4 color="blue"];
 		cmariette   [label = "MARIETTE\nConstant"];
 		lhak        [label = "HAK\nLéo"];
 		nroy        [label = <ROY<BR/>Noéline<BR/><I>Team prev</I>> @BDE@ penwidth=4 color="blue"];
 		nrocher     [label = "ROCHER\nNicolas"];
 		priche      [label = "RICHE\nPhilippe"];
-		tflageolet  [label = <FLAGEOLET<BR/>Thomas<BR/><I> </I>> penwidth=4 color="pink"];
+		tflageolet  [label = <FLAGEOLET<BR/>Thomas> penwidth=4 color="pink"];
 		lnadler     [label = "NADLER\nLucas"];
 	}
 
