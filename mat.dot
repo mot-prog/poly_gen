@@ -540,7 +540,7 @@ digraph mat {
 
 		// Liens de parrainage adoptif / second parrain
 		bpeyrard -> bmael [style=dashed]; // Parrain non présent sur l'arbre
-		arondeau -> pkentin [style=dashed];
+		arondeau -> pkentin [style=dashed penwidth=2 color = "#f05050"];
 	}
 	endnode [style=invis];
 
