@@ -100,4 +100,4 @@ Certains d'entre nous se font adopter, ça arrive, c'est la vie. Pour remédier 
 - A vous de choisir si vous voulez inclure les personnes n'ayant pas de parrains.
   Ils pourraient avoir un fillots l'année suivante ce qui faciliterais la complétions de l'arbre.
 
-# Bon courage et vive Polytech'Lille ! 🦊️  
+# Bon courage et vive Polytech'Lille ! 🦊️

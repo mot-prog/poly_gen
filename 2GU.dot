@@ -19,9 +19,11 @@ digraph GGU {
 	subgraph cluster_2GU {
 		label = "2GU";
 		fillcolor = "#ada59c";
-		{ rank="same";
-			tes 			[color = "#ada59c" fillcolor = "#ada59c" fontcolor = "#ada59c"];
-		}
+
+///////////////////////
+// ---- 2022 ---- 
+///////////////////////
+
 		{ rank="same";
 			alexandregall	[label = "GALLOIS\nAlexandre"];
 			alexandresant	[label = <SANTENS<BR/>Alexandre<BR/><I>PULCE</I>> @PREZ@];
@@ -36,7 +38,11 @@ digraph GGU {
 			paulrive	[label = <RIVÉ<BR/>Paul<BR/><I>Respo Alternants/Com</I>> @BDE@ penwidth=4 color="deeppink"];
 			thomasbrs	[label = "BRS\nThomas"];
 		}
-			tes-> thomasbrs [penwidth=2 color = "invis"];
+
+///////////////////////
+// ---- 2023 ---- 
+///////////////////////
+
 		{ rank="same";
 			fannybroc	[label = "BROCOT\nFanny"];
 			imanebounou	[label = "BOUNOU\nImane"];
@@ -59,6 +65,10 @@ digraph GGU {
 		oceanecarte -> kenzabad;
 		paulrive -> samuelbienv [penwidth=2 color = "#f05050"];
 		thomasbrs -> leilalogi;
+
+///////////////////////
+// ---- 2024 ---- 
+///////////////////////
 
 		{ rank="same";
 			albinneu	[label = <<table border="0">
@@ -93,6 +103,11 @@ digraph GGU {
 		samuelbienv -> albinneu [penwidth=2 color = "#f05050"];
 		samuelbienv -> louishetr;
 		youssraelmou -> lukasalb;
+
+///////////////////////
+// ---- 2025 ---- 
+///////////////////////
+
 		{ rank = "same";
 			antoinesim [label = <SIMON<BR/>Antoine<BR/><I>Respo Communication</I>> @BDE@ penwidth=4 color="pink"];
 			lilouflo   [label = "FLORENT\nLilou"];
@@ -134,6 +149,11 @@ digraph GGU {
 			titouancheva -> loucandice;
 			lukasalb -> phillippela;
         	lukasalb -> leobernae;
+
+///////////////////////
+// ---- 2026 ---- 
+///////////////////////
+
 		{ rank = "same";
 			pledoeuf  	[label = "LEDOEUF\nPierre-Louis"];
 			egautier 	[label = <GAUTIER<BR/>Emilie<BR/><I>Respo Alternants</I>> @BDE@ penwidth=4 color="green"];
@@ -158,7 +178,12 @@ digraph GGU {
 		phillippela->azarktouni;
 		gauthierpl->azarktouni;
 		leobernae->egautier;
-		{ rank = "same";//2027
+
+///////////////////////
+// ---- 2027 ---- 
+///////////////////////
+
+		{ rank = "same";
 			aacunapi  	[label = "ACUNA PINTOS\nAgustin"];
 			onedey 	[label = <NEDEY<BR/>Oscar<BR/><I>Respo Alternants et International</I>>, @BDE@, penwidth=4, color="yellow"];
 			mdelarue 	[label = <DELARUE<BR/>Maëlle<BR/>>, penwidth=4, color="orange"];
@@ -168,6 +193,7 @@ digraph GGU {
 			lnoblanc    	[label = "NOBLANC\nLouise"];
 			hheyd    	[label = "HEYD\nHugo"];
 			nwannhen 	[label = <WANNHEHAIN<BR/>Noé<BR/><I>Respo Inté/Event</I>>, @BDE@, penwidth=4, color="orange"];
+			tfaucon		[label = "FAUCON\nTitouan"];
 		}
 		egautier->aacunapi;
 		egautier->jtrichar;
@@ -178,21 +204,47 @@ digraph GGU {
 		vwijsman->lnoblanc;
 		mgabard->nwannhen [penwidth=2 color = "#f05050"];
 		azarktouni->nwannhen;
-		laurawan->lcoelho;
 		mgeorges->hheyd;
 
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+
         { rank = "same";
-			invis1 [style=invis];
+			mleon	  	[label = "LEON\nMaurine"];
+			tlesaffre  	[label = "LESAFFRE\nTom"];
+			ppuchois  	[label = "PUCHOIS\nPaul"];
+			bpoirier  	[label = "POIRIER\nBéatrice"];
+			mbonnet  	[label = "BONNET\nMathieu"];
+			ssmara  	[label = "SMARA\nSana"];
+			rgrioche  	[label = "GRIOCHE\nRomane"];
         }
+		mgeorges -> mleon;
+		tfaucon -> tlesaffre;
+		aacunapi -> ppuchois;
+		lsaboy -> bpoirier;
+		lnoblanc -> mbonnet;
+		jtrichar -> ssmara;
+		cviella -> rgrioche;
 	}
+
+///////////////////////
+// ---- PROMOS ---- 
+///////////////////////
+
 	subgraph cluster_promos {
 		label = "Promos";
 		penwidth = 0;
 		color = none;
 		node [shape = none];
 
-		"2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+		"2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
 	}
+
+///////////////////////
+// ---- LEGENDE ---- 
+///////////////////////
+
 	subgraph cluster_legende {
 		label = "Légende";
 		fillcolor = none;

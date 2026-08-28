@@ -14,38 +14,23 @@ digraph is {
 
 	rankdir = LR;
 
-	subgraph cluster_promos {
-		label = "Promos";
-		penwidth = 0;
-		color = none;
-		node [shape = none];
-
-		"2019" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
-	}
-		subgraph cluster_legende {
-		label = "Légende";
-		fillcolor = none;
-
-		leg_parrain	[label = "Parrain"];
-		leg_fillot	[label = "Fillot"];
-		leg_fillotadop	[label = "Fillot Adoptif"];
-		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> @BDE@];
-		leg_prez	[label = <Président de club<BR/><I>Club</I>> @PREZ@];
-		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
-
-		leg_parrain -> leg_fillot;
-		leg_parrain -> leg_fillotadop [style = "dashed"];
-	}
-
 	subgraph cluster_IS {
 		label = "IS";
 		fillcolor = "#FFFFE0";
 
-		{ rank = "same";//2019
+///////////////////////
+// ---- 2019 ---- 
+///////////////////////
+
+		{ rank = "same";
 			maroua		[label = <Maroua<BR/><I>Trésorière</I>> @BDE@ penwidth=4 color="green"];
 		}
 
-		{ rank = "same";//2020
+///////////////////////
+// ---- 2020 ---- 
+///////////////////////
+
+		{ rank = "same";
 			basiledem	[label = <DÉMARET<BR/>Basile<BR/><I>Trésorier</I>> @BDE@];
 			jbhelb		[label = "HELBERT\nJB"];
 			justinenos	[label = "NOSLIER\nJustine"];
@@ -53,7 +38,11 @@ digraph is {
 		}
 		maroua -> unknown;
 
-		{ rank = "same";//2021
+///////////////////////
+// ---- 2021 ---- 
+///////////////////////
+
+		{ rank = "same";
 			benoitcam	[label = "CAMARO\nBenoît"];
 			clairegarc	[label = "GARCIA\nClaire"];
 			coraliecous	[label = "COUSIN\nCoralie"];
@@ -72,7 +61,11 @@ digraph is {
 		justinenos -> clairegarc;
 		unknown -> thomasfirm;
 
-		{ rank="same";//2022
+///////////////////////
+// ---- 2022 ---- 
+///////////////////////
+
+		{ rank="same";
 			morgane		[label = "BOURDAIS\nMorgane"];
 			raphael		[label = "PAČIĆ\nRaphael"];
 			antoninriv	[label = "RIVAL\nAntonin"];
@@ -114,7 +107,11 @@ digraph is {
 		naialoll -> mathildalec;
 		thomasfirm -> carolinebill;
 
-		{ rank="same";//2023
+///////////////////////
+// ---- 2023 ---- 
+///////////////////////
+
+		{ rank="same";
 			achillegel	[label = "GELENS\nAchille"];
 			alexiaram	[label = "RAMBAT\nAlexia"];
 			amine		[label = "\nAmine"];
@@ -192,7 +189,11 @@ digraph is {
 		pierre -> clementdel;
 		raphael -> nicolasvois;
 
-		{ rank="same";//2024
+///////////////////////
+// ---- 2024 ---- 
+///////////////////////
+
+		{ rank="same";
 			affletemaelys	[label = "TIEHA\nAfflété Maëlys"];
 			alexandrerev	[label = "REVILLON\nAlexandre"];
 			amandineleg	[label = "LEGIERSKY\nAmandine"];
@@ -288,7 +289,12 @@ digraph is {
 		whillem -> augustinmail;
 		yannisheg -> emilianlor;
 		yannisheg -> othmane;
-		{ rank="same";//2025
+
+///////////////////////
+// ---- 2025 ---- 
+///////////////////////
+
+		{ rank="same";
 			julescharp		[label = <CHARPENIET<BR/>Jules<BR/><I>Respo Com</I>> @BDE@ penwidth=4 color="yellow"];
             akanhanaa		[label = "AKAN\nHanaa"];
 			adrienpech		[label = <PECHER<BR/>Adrien<BR/><I>Le PaF!</I>> @PREZ@ penwidth=4 color="orange"];
@@ -353,7 +359,12 @@ digraph is {
         loliboutil ->yohanndela;
         loliboutil -> scottmcgu;
 		clarabald -> mrousselot; 
-	{ rank="same";//2026
+
+///////////////////////
+// ---- 2026 ---- 
+///////////////////////
+
+	{ rank="same";
 			irisdepagneu    [label = <DEPAGNEUX<BR/>IRIS<BR/><I>L'Huma</I>> @PREZ@];
             rfush		[label = "FUSH\nRomy"];
 			sgiraud 	[label = <GIRAUD<BR/>Solène<BR/><I>Régate</I>> @PREZ@ penwidth=4 color="blue"];
@@ -409,7 +420,11 @@ digraph is {
 		matteomoura->acanal;
 		mdufresne->ebaranowski;
 
-		{rank="same";//2027
+///////////////////////
+// ---- 2027 ---- 
+///////////////////////
+
+		{rank="same";
 			avandamme   [label = <VANDAMME<BR/>Aliona<BR/><I>Polygames</I>> @PREZ@];
 			xmuller  	[label = <MULLER<BR/>Xilban<BR/><I>Respo Inté/Events</I>> @BDE@ penwidth=4 color="orange"];
 			oroche  	[label = <ROCHE<BR/>Olan<BR/><I>Respo Rezo</I>> @BDE@ penwidth=4 color="yellow"];
@@ -417,7 +432,11 @@ digraph is {
 			lleane 		[label = "LABIS\nLéane"];
 			zlavielle	[label = <LAVIEILLE<BR/>Zoé<BR/><I>Polydance</I>> @PREZ@]
 			esurace		[label = "SURACE\nEhoarn"];
-				
+			dbreguet  [label = <BREGUET<BR/>David<BR/>>];
+			cmueller  [label = <MUELLER<BR/>Cilban<BR/>>]; 
+			amelon  [label = <MELON<BR/>Augustin<BR/>>];
+			mvincent  [label = <VINCENT<BR/>Marine<BR/>>];
+
 		}
 		dlahanque->esurace;
 		abonnefant->avandamme;
@@ -425,10 +444,76 @@ digraph is {
 		remicleme->lleane;
 		mboubacar->alo;
 		mbouvier->oroche;
+
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+
+		{rank="same";
+			rhaboucha  [label = <HABOUCHA<BR/>Rania<BR/>>];
+			# hligaliali  [label = <LIGALI ALI<BR/>Halid<BR/>>]; voir rq
+			omaubert  [label = <MAUBERT<BR/>Orion<BR/>>];
+			mlibre  [label = <LIBRE<BR/>Mathilde<BR/>>];
+			yboudhri  [label = <BOUDHRI<BR/>Youssef<BR/><i>Handball</i>> @PREZ@];
+			mpedico  [label = <PEDICO<BR/>Matteo<BR/>>];
+			cguerra  [label = <GUERRA<BR/>Cesar<BR/><i>International</i><BR/><i>Poly'World(VP)</i><BR/><i>Poly'danse(COM)</i>> @BDE@ @NEAN@];
+			sadamou  [label = <ADAMOU<BR/>Salim<BR/>>];
+			llebon  [label = <LEBON<BR/>Léo-Paul<BR/><i>Polyworld</i>> @PREZ@];
+			aballard  [label = <BALLARD<BR/>Anaïs<BR/>>];
+			# hmaftah  [label = <MAFTAH<BR/>Houda<BR/>>]; en double
+			iennahli  [label = <ENNAHLI<BR/>Ilyas<BR/>>];
+			mdaci  [label = <DACI<BR/>Myriam<BR/>>];
+			lkarrout  [label = <KARROUT<BR/>Lina<BR/>>];
+			rcassen  [label = <CASSEN<BR/>Ramy<BR/>>];
+			aviagbo  [label = <VIAGBO<BR/>Akoua Fafame<BR/>>];
+			alarif  [label = <LARIF<BR/>Abdellah<BR/>>];
+			nbachirabdou  [label = <BACHIR ABDOU<BR/>Nana Hadiza<BR/>>];
+			rdegez  [label = <DEGEZ<BR/>Romain<BR/>>];
+			lfilaut  [label = <FILAUT<BR/>Laura<BR/>>];
+			adelavaldupuis  [label = <DELAVAL-DUPUIS<BR/>Alexandre<BR/><i>L'instru(VP)</i>>];
+			amernissiarifi  [label = <MERNISSI ARIFI<BR/>Amine<BR/><i>Pulce(SECR)</i>>];
+			cgiron  [label = <GIRON<BR/>Camille<BR/>>];
+		}
+		aballard -> omaubert;
+		dbreguet -> mlibre;
+		cmueller -> cguerra;
+		amelon -> llebon [style = "dotted"];
+		mvincent -> llebon;
+		irisdepagneu -> aballard;
+		# cguerra -> hmaftah;
 	}
 	
-	endnode [style=invis];
+///////////////////////
+// ---- PROMOS ---- 
+///////////////////////
 
-	ebaranowski -> endnode [style=invis];
-	"2026" -> endnode [style=invis];
+	subgraph cluster_promos {
+		label = "Promos";
+		penwidth = 0;
+		color = none;
+		node [shape = none];
+
+		"2019" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
+	}
+
+///////////////////////
+// ---- LEGENDE ---- 
+///////////////////////
+
+	subgraph cluster_legende {
+		label = "Légende";
+		fillcolor = none;
+
+		leg_parrain	[label = "Parrain"];
+		leg_fillot	[label = "Fillot"];
+		leg_fillotadop	[label = "Fillot Adoptif"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> @BDE@];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> @PREZ@];
+		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
+
+		leg_parrain -> leg_fillot;
+		leg_parrain -> leg_fillotadop [style = "dashed"];
+	}
+
+
 }

@@ -18,7 +18,7 @@ all : $(PDFs)
 		-e 's/@ALP@/penwidth=4 color="#7ed3ecff"/g' \
 		-e 's/@BARB@/penwidth=4 color="#f700ffff"/g' \
 		-e 's/@MILLE@/penwidth=4 color="purple"/g' \
-		-e 's/@NEAN@/penwidth=4 color="#00b7ff/g' \
+		-e 's/@NEAN@/penwidth=4 color="#00b7ff"/g' \
 	    $< | dot -Tpdf > $@
 
 clean:

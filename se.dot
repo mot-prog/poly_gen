@@ -447,6 +447,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 				bisabelle   [label = <BAVUGILIJE<BR/>Isabelle<BR/><I>Polydance</I>> @PREZ@ penwidth=4 color="purple"];
 				cbaron 		[label = <BARON<BR/>Clément<BR/><I>Sono</I>> @PREZ@];
 				znazi		[label = "NACINOVICH\nZacharie"];
+				eperdrix [label = "PERDRIX\nEdouard"]
 				}
 				bcart->tduwez;
 				jwacquet->apillot;
@@ -462,54 +463,68 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 				yberrada->cpayet;
 				bisabelle->esorais;					
     }
+
+///////////////////////
+// ---- IOT ---- 
+///////////////////////
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
 	subgraph cluster_IOT {
         label="IOT";
-        fillcolor = "#d38e8e";
+        fillcolor = "#ff5d5d";
 
         { rank = "same";
             mterrier [label = <TERRIER<BR/>Moïse<BR/><I>Robotech(VP)</I>>];
-			jbaptiste [label = "JOUMIER\nBaptiste"];
-			cali [label = "Chaoui kouraichi\nAli"];
-			sgrégoire [label = "SAILLY\nGrégoire"];
-			killyan [label = <KUDERSKI<BR/>Illyan<BR/><I>Le Studio</I>> @PREZ@];
-			teliott [label = "TARDIEUX\nEliott"];
-			nthales [label = "NANA\nThales"];
-			asalwa [label = "ABOUCADE\nSalwa"];
-			ljulien [label = "LEFRANC\nJulien"];
-			mfedi [label = "MOHAMED\nFedi"];
-			ewalid [label = "EL BEKRAOUI\nWalid"];
-			okais [label = "OUTALEB\nKaïs"];
-			dnoé [label = "DELIN\nNoé"];
-			njospen [label = "NGALAMOU YINIPI\nJospen"];
-			vvalentin [label = "VROMAN\nValentin"];
+			bjoumier [label = "JOUMIER\nBaptiste"];
+			achaoui [label = "Chaoui kouraichi\nAli"];
+			gsailly [label = "SAILLY\nGrégoire"];
+			ikuderski [label = <KUDERSKI<BR/>Illyan<BR/><I>Le Studio</I>> @PREZ@];
+			etardieux [label = "TARDIEUX\nEliott"];
+			tnana [label = "NANA\nThales"];
+			saboucade [label = "ABOUCADE\nSalwa"];
+			jlefranc [label = "LEFRANC\nJulien"];
+			fmohamded [label = "MOHAMED\nFedi"];
+			welbekraoui [label = "EL BEKRAOUI\nWalid"];
+			koutaleb [label = "OUTALEB\nKaïs"];
+			ndelin [label = "DELIN\nNoé"];
+			jngalamou [label = "NGALAMOU YINIPI\nJospen"];
+			vvroman [label = "VROMAN\nValentin"];
         }
 
-        cpayet -> mterrier;
-		lghazali -> killyan;
+        cpayet -> mterrier [weight = 2.0];
+		lghazali -> ikuderski [penwidth=2 color = "yellow" weight = 3.0];
 		
     }
 
+///////////////////////
+// ---- EIF ---- 
+///////////////////////
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+
 	subgraph cluster_EIF {
         label="EIF";
-        fillcolor = "#695757";
+        fillcolor = "#ff7843";
 
         { rank = "same";
-            belie [label = <BOUALI<BR/>Elie<BR/><I>Président</I>> @BDE@ @NEAN@];
-			dleo [label = "DUFOUR\nLeo" @ALP@];
-			cgabin [label = "Carpentier\nGabin"];
-			mcome [label = <MARCHON<BR/>Côme<BR/><I>Robotech(VP)</I>>];
-			dlorette [label = "DELABY\nLorette" @MILLE@];
-			nsteven [label = "NGOWET LOUEMBET\nHyacinthe Steven"];
-			rje [label = "RISS\nJean-Etienne"];
-			dkoro [label = "DABIRA \nMichel Renaud"];
-			aoumoulminime [label = "AHMED ABDI\nOumoulminine"];
+            ebouali [label = <BOUALI<BR/>Elie<BR/><I>Président</I>> @BDE@ @NEAN@];
+			ldufour [label = "DUFOUR\nLeo" @ALP@];
+			gcarpentier [label = "Carpentier\nGabin"];
+			cmarchon [label = <MARCHON<BR/>Côme<BR/><I>Robotech(VP)</I>>];
+			ldelaby [label = "DELABY\nLorette" @MILLE@];
+			hngowet [label = "NGOWET LOUEMBET\nHyacinthe Steven"];
+			jeriss [label = "RISS\nJean-Etienne"];
+			mrdabira [label = "DABIRA \nMichel Renaud"];
+			oahmedabdi [label = "AHMED ABDI\nOumoulminine"];
         }
 
-        boberson -> belie;
-		rduhamel -> dleo;
-		esorais -> cgabin;
-		tpaumas -> mcome;
-		bisabelle -> dlorette;
+        boberson -> ebouali [penwidth=2 color = "#f05050" weight = 3.0];
+		rduhamel -> ldufour [weight = 2.0];
+		esorais -> gcarpentier[weight = 3.0];
+		tpaumas -> cmarchon[weight = 2.0];
+		bisabelle -> ldelaby[weight = 2.0];
 		
     }
 ///////////////////////
@@ -518,6 +533,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
     subgraph cluster_SE2A {
 		label = "SE2A";
 		fillcolor = "#F6B0B0";
+
 		{ rank = "same";//2017
 			blank1 [color = "#F6B0B0" fillcolor = "#F6B0B0" fontcolor = "#F6B0B0"]; // les BLANK servent à mettre en forme le graphique sinon tout est décalé
 		}
@@ -580,11 +596,30 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
  			hzekri	[label ="ZEKRI\nHossam"];
  			rponche [label ="PONCHE\nRomain"];
  			lbusiere	[label ="BUSIERE\nLouis"];
+			blank2028 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
  		}
  		akerhasco -> hzekri [style = "dashed"];
  		jwacquet ->  rponche [style = "dashed"];
  		pcasimiri -> lbusiere [style = "dashed"];
  		tess -> hzekri [penwidth=2 color = "invis"];
+	}
+	
+	subgraph cluster_EIF2A {
+		label = "EIF2A";
+		fillcolor = "#e7905e";
+
+		{ rank="same";//2028
+ 			jbrugot	[label =<BRUGOT<BR/>Jules<BR/><I>Prévention / DD</I>> @BDE@ @NEAN@];
+ 			flament	[label ="FLAMENT\n "];
+			endjakou [label ="NDJAKOU KEMAYOU\nEnrique Alex"];
+ 			kwadoux	[label ="WADOUX\nKylian"];
+ 			mkane	[label ="KANE\nSokhna Maty"];
+ 		}
+		mkane -> kwadoux -> endjakou -> flament -> jbrugot [style=invis weight = 10.0];
+ 		rduhamel -> jbrugot [style = "dashed" penwidth=2 color = "#f05050"];
+ 		#nc -> lbusiere [style = "dashed"];
+ 		eperdrix -> flament [style = "dashed"];
+		blank2028 -> flament[weight=9.0 color="invis"];
 	}
 
 ///////////////////////

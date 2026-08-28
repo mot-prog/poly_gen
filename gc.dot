@@ -14,13 +14,17 @@ digraph gc {
 
 	rankdir = LR;
 
+///////////////////////
+// ---- PROMOS ---- 
+///////////////////////
+
   subgraph cluster_promos {
 		label = "Promos";
 		penwidth = 0;
 		color = none;
 		node [shape = none];
 
-		"2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+		"2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
 	}
 
 	
@@ -29,10 +33,18 @@ digraph gc {
 		label = "GC";
 		fillcolor = "#FFE0B0";
 
+///////////////////////
+// ---- 2013 ---- 
+///////////////////////
+
 		{ rank = "same";
 			camilledelle	[label = "DELLENBACH\nCamille"];
 			gauthierwern	[label = "WERNERT\nGauthier"];
 		}
+
+///////////////////////
+// ---- 2014 ---- 
+///////////////////////
 
 		{ rank = "same";
 			celineraynal	[label = "RAYNAL\nCéline"];
@@ -42,7 +54,11 @@ digraph gc {
 		}
 		camilledelle -> mariedelaun;
 		gauthierwern -> celineraynal;
-		
+
+///////////////////////
+// ---- 2015 ---- 
+///////////////////////
+
 		{ rank="same";
 			// camilleberb	[label = "BERBINEAU\nCamille"];
 			// jeanarnaudesp	[label = "ESPINNASSOUZE\nJean Arnaud"];
@@ -60,6 +76,10 @@ digraph gc {
 		maximecoche -> tristantoul;
 		pauljutard -> nicolasbes;
 
+///////////////////////
+// ---- 2016 ---- 
+///////////////////////
+
 		{ rank="same";
 			aurelialourd	[label = "LOURDEL\nAurelia"];
 			emmaverge	[label = "VERGER\nEmma"];
@@ -74,6 +94,10 @@ digraph gc {
 		nicolasbes -> theomahi;
 		tristantoul -> lucasbuis;
 
+///////////////////////
+// ---- 2017 ---- 
+///////////////////////
+
 		{ rank="same";
 			antoinefran	[label = "FRANÇAIS\nAntoine"];
 			antoinegoud	[label = "GOUDINOUX\nAntoine"];
@@ -83,6 +107,10 @@ digraph gc {
 		emmaverge -> antoinefran;
 		guillaumeper -> marionpalle;
 		lucasbuis -> antoinegoud;
+
+///////////////////////
+// ---- 2018 ---- 
+///////////////////////
 
 		{ rank="same";
 			corentingode	[label = "GODET\nCorentin"];
@@ -96,6 +124,11 @@ digraph gc {
 		antoinegoud -> corentingode;
 		remyheni -> florianbaron;
 
+
+///////////////////////
+// ---- 2020 ---- 
+///////////////////////
+
 		{ rank="same";
 			arthurvev	[label = "VÈVE\nArthur"];
 			maellechan	[label = "CHANHIH\nMaëlle"];
@@ -106,6 +139,10 @@ digraph gc {
 		leapotvin -> thomaslege;
 		thomasberthou -> arthurvev;
 		thomasberthou -> maellechan;
+
+///////////////////////
+// ---- 2021 ---- 
+///////////////////////
 
 		{ rank="same";
 			alexandremion	[label = "MIONNET\nAlexandre"];
@@ -125,7 +162,6 @@ digraph gc {
 			maximefarde	[label = <FARDEAU<BR/>Maxime<BR/><I>La Radio</I>> @PREZ@];
 			nadaabouir	[label = <ABOUIR<BR/>Nada<BR/><I> </I>> @BDE@ penwidth=4 color="blue"];
 			romanegad	[label = "GADEK\nRomane"];
-			romanegade	[label = "GADEK\nRomane"];
 		}
 		arthurvev -> marinroch;
 		maellechan -> marinroch;
@@ -134,6 +170,10 @@ digraph gc {
 		thomaslege -> bakhtar;
 		thomaslege -> doriannlahs;
 		thomaslege -> nadaabouir [penwidth=2 color = "#f05050"];
+
+///////////////////////
+// ---- 2022 ---- 
+///////////////////////
 
 		{ rank="same";
 			alexisportrob	[label = "PORT-ROBACH\nAlexis"];
@@ -169,6 +209,10 @@ digraph gc {
 		nadaabouir -> nuriacar;
 		nadaabouir -> yannistouns [penwidth=2 color = "#f05050"];
 		romanegade -> leoniedec;
+
+///////////////////////
+// ---- 2023 ---- 
+///////////////////////
 
 		{ rank = "same";
 			axellelecler	[label = "LECLER\nAxelle"];
@@ -206,7 +250,11 @@ digraph gc {
 		wiame -> leadudkowi;
 		yannistouns -> elisalemee;
 
-		{ rank = "same";//2024
+///////////////////////
+// ---- 2024 ---- 
+///////////////////////
+
+		{ rank = "same";
             adamvascon  [label = "VASCONCELOS\nAdam"];
             adjouaayik  [label = "AYIKPE\nAdjoua"];
 			adrienschne	[label = "SCHNEIDER\nAdrien"];
@@ -266,7 +314,12 @@ digraph gc {
 		louissoulard -> lucasbordet;
 		luciecarette -> valentincha;
 		valentineleu -> martindelb;
-		{ rank = "same";//2025
+
+///////////////////////
+// ---- 2025 ---- 
+///////////////////////
+
+		{ rank = "same";
             adamderno   [label = "DERNONCOURT\nAdam"];
             amineaita   [label = "AIT AHMED\nAmine"];
             antoinebul  [label = "BULTEL\nAntoine"];
@@ -357,7 +410,12 @@ digraph gc {
         yacinesaguer -> mateopons;
         yacinesaguer -> evadegran;
         zinedineait -> eliotlegr;
-	{ rank = "same";//2026
+
+///////////////////////
+// ---- 2026 ---- 
+///////////////////////
+
+	{ rank = "same";
 		emazzoli  [label = "MAZZOLI\nEthan"];
 		theomamel  [label = <MAMELIN<BR/>Théo<BR/><I>EESTEC</I>> @PREZ@ penwidth=4 color="blue"];
 		aboudet [label = "BOUDET\nAlix"];
@@ -375,9 +433,10 @@ digraph gc {
 		crault [label = <RAULT<BR/>Camille<BR/><I>DDPS</I>> @BDE@ penwidth=4 color="purple"];
 		lfrenoi 	[label = <FRENOI<BR/>Lisa<BR/>> penwidth=4 color="purple"];
 		jgueguen	[label = <GUEGUEN<BR/>Jeanne<BR/><I>Respo International</I>> @BDE@ penwidth=4 color="purple"]
-		dekandi [label = "EKANDI\Diane"];
-		tdeclimm [label = "DE CLIMMER\Théo"];
+		dekandi [label = "EKANDI\nDiane"];
+		tdeclimm [label = "DE CLIMMER\nThéo"];
 		tfasquel [label = "FASQUELLE\nTom"];
+		tsolich [label = <SOLICH<BR/>Tania<BR/>>];
 
 	}
 	leelouba -> lfrenoi;
@@ -396,8 +455,12 @@ digraph gc {
 	juliedebl ->agengembre;
 	pierreanto -> klandreau;
 	titouanle -> crault [penwidth=2 color = "#f05050"];
-	
-	{ rank = "same";//2027
+
+///////////////////////
+// ---- 2027 ---- 
+///////////////////////
+
+	{ rank = "same";
 		mmadjile  [label = "MADJILE BEIDI\nManuella"];
 		mribault  [label = <RIBAULT<BR/>Martin<BR/><I>Président</I>> @BDE@ penwidth=4 color="yellow"];
 		mpayet [label = <PAYET<BR/>Mattéo<BR/><I>Respo Club</I>> @BDE@ penwidth=4 color="orange"];
@@ -409,6 +472,16 @@ digraph gc {
 		egenest [label =  <GENEST<BR/>Ethan<BR/><I>Gymnase</I>> @PREZ@ penwidth=4 color="orange"];
 		acourtin [label = "COURTIN\nAntoine"];
 		zloeb [label =  <LOEB<BR/>Zacharie<BR/><I>Inté Events</I>> @BDE@ penwidth=4 color="yellow"];
+		mbonnefoy 	 [label = <BONNEFOY<BR/>Marine<BR/>>];
+		tdaburon [label = <DABURON<BR/>Tom<BR/>>];
+		emubiki [label = <MUBIKI MALENGA<BR/>Eloges<BR/>>];
+		apoquet [label = <POQUET<BR/>Alexandre<BR/>>];
+		lmariette [label = <MARIETTE<BR/>Lomane<BR/>>];
+		cassman [label = <ASSMAN<BR/>Chloé<BR/>>];
+		aleduff [label = <LE DUFF<BR/>Anaëlle<BR/>>];
+		mduffrenne [label = <DUFFRENNE<BR/>Mathis<BR/>>];
+		lbranger [label = <BRANGER<BR/>Louise<BR/>>];
+		craux [label = <RAUX<BR/>Christophe<BR/>>];
 	}
 	dekandi -> mmadjile;
 	mbourge -> zloeb;
@@ -424,7 +497,71 @@ digraph gc {
 	mtazi -> mbotteld;
 	tdeclimm -> egenest;
 	tfasquel -> acourtin;
+	mtazi -> mbonnefoy;
+	tsolich -> tdaburon;
+
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+		{ rank = "same";
+			entumbamulumba [label = <NTUMBA MULUMBA<BR/>Eunice<BR/>> ];
+			mgoossens [label = <GOOSSENS<BR/>Mats<BR/><I>Instru</I>> @PREZ@];
+			ahenri [label = <HENRI<BR/>Alec<BR/><I>Polyfrites<BR/>Polyboule</I>> @PREZ@ @ALP@];
+			rconstant [label = <CONSTANT<BR/>Raphaël<BR/>> ];
+			nlicour [label = <LICOUR<BR/>Nathan<BR/><I>ComediaXzythologie</I>> @MILLE@ @PREZ@];
+			agrimonprez [label = <GRIMONPREZ<BR/>Auguste<BR/><I>BDS</I>> @BARB@ @PREZ@];
+			cblanchard [label = <BLANCHARD<BR/>Chloé<BR/><I>Secrétaire</I><BR/><i>polyfrites</i>> fillcolor="#f05050:yellow" @MILLE@];
+			tpouget [label = <POUGET<BR/>Thomas<BR/>> @BARB@];
+			lgabet [label = <GABET<BR/>Lucas<BR/>> ];
+			cpescheux [label = <PESCHEUX<BR/>Corentin<BR/>> ];
+			lsonzogni [label = <SONZOGNI<BR/>Louis<BR/><I>BDS(VP)</I>> @BARB@];
+			llescalier [label = <LESCALIER<BR/>Lola<BR/>> ];
+			mollivier [label = <OLLIVIER<BR/>Maéva<BR/><I>BDS(VP)</I>> ];
+			bbrumard [label = <BRUMARD<BR/>Benjamin<BR/><I>Instru(RESP ingé son et matos)<BR/>Instru(Guitariste)</I>> ];
+			hdjedje [label = <DJÉDJÉ<BR/>Hyppolite-Hanniel<BR/>> ];
+			mbarragan [label = <BARRAGAN<BR/>Morgane<BR/>> @BARB@];
+			lchauvin [label = <CHAUVIN<BR/>Lili<BR/>> @BARB@];
+			rrolin [label = <ROLIN<BR/>Régis<BR/><I>Inte et Event</I>> @NEAN@ @BDE@];
+			clebrun [label = <LEBRUN<BR/>Cyprien<BR/>> @ALP@];
+			rbepeugneghuembe [label = <BEPEUGNE GHUEMBE<BR/>Rosita<BR/>> ];
+			hmenard [label = <MENARD<BR/>Hector<BR/>> @MILLE@];
+			#cheurfi [label = <CHEURFI<BR/>Cheurfi<BR/>> ];
+			sthiawsylla [label = <THIAW SYLLA<BR/>Sokhna Fatim<BR/>> ];
+			mmelin [label = <MÉLIN<BR/>Mattéo<BR/>> @ALP@];
+			yahmima [label = <AHMIMA<BR/>Yasmin<BR/><I>BDA</I>> @PREZ@ @MILLE@];
+			fbouraghda [label = <BOURAGHDA<BR/>Fouzi<BR/>> ];
+			tlavoye [label = <LAVOYE<BR/>Tom<BR/><I>Polychaise</I>> @PREZ@];
+			fratovondriaka [label = <RATOVONDRIAKA<BR/>Fabrina<BR/>> ];
+			msahmoudi [label = <SAHMOUDI<BR/>Mohamed<BR/>> ];
+			hdelauney [label = <DELAUNEY<BR/>Hugo<BR/><I>Gymnase</I>> @PREZ@];
+		}		
+		emubiki -> entumbamulumba;
+		zloeb -> mgoossens;
+		bbessier -> ahenri;
+		acourtin -> rconstant;
+		mribault -> nlicour;
+		toliveau -> agrimonprez;
+		mberge -> cblanchard [penwidth=2 color = "#f05050"];
+		bbessier -> tpouget;
+		apoquet -> lgabet;
+		lmariette -> llescalier;
+		ctorres -> mollivier;
+		mpayet -> bbrumard;
+		tdaburon -> mbarragan;
+		cassman -> lchauvin;
+		mberge -> clebrun;
+		aleduff -> rbepeugneghuembe;
+		mduffrenne -> hmenard;
+		mduffrenne -> mmelin;
+		lbranger -> yahmima;
+		acourtin -> tlavoye;
+		egenest -> hdelauney [style = dotted penwidth=2 color = "yellow"];
+		craux -> hdelauney;
 	}
+
+///////////////////////
+// ---- GC2A ---- 
+///////////////////////
 
 	subgraph cluster_GC2A {
 		label = "GC2A";
@@ -433,22 +570,22 @@ digraph gc {
 		{ rank = "same";//2013
 			blank13 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
 		}
-				{ rank = "same";//2014
+		{ rank = "same";//2014
 			blank14 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
 		}
-				{ rank = "same";//2015
+		{ rank = "same";//2015
 			blank15 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
 		}
-				{ rank = "same";//2016
+		{ rank = "same";//2016
 			blank16 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
 		}
-				{ rank = "same";//2017
+		{ rank = "same";//2017
 			blank17 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
 		}
-				{ rank = "same";//2018
+		{ rank = "same";//2018
 			blank18 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
 		}
-				{ rank = "same";//2020
+		{ rank = "same";//2020
 			blank20 [color = "invis" fillcolor = "invis" fontcolor = "invis"];
 		}
 		blank13 -> blank14 [penwidth=4 color="invis"];
@@ -458,22 +595,36 @@ digraph gc {
 		blank17 -> blank18 [penwidth=4 color="invis"];
 		blank18 -> blank20 [penwidth=4 color="invis"];
 
+///////////////////////
+// ---- 2021 ---- 
+///////////////////////
 		{ rank = "same";
 			alexpiton	[label = <PITON<BR/>Alex<BR/><I>Respo Alternants</I>> @BDE@ penwidth=4 color="blue"];
 		}
 		blank20 -> alexpiton [penwidth=4 color="invis"];
+
+///////////////////////
+// ---- 2022 ---- 
+///////////////////////
 		{ rank = "same";
             quentinmas [label = "MASCRET\nQuentin" penwidth=4 color="white"];
 
 		}
 		alexpiton->quentinmas;
 
+///////////////////////
+// ---- 2023 ---- 
+///////////////////////
 		{ rank = "same";
 			gaspardgui	[label = <DE FROMONT<BR/>Gaspard<BR/><I>Vice-Président Externe</I>> @BDE@ penwidth=4 color="purple"];
 			bchahti		[label = "CHAHTI\nBilal"];
 
 		}
         quentinmas->gaspardgui;
+
+///////////////////////
+// ---- 2024 ---- 
+///////////////////////		
 		{ rank = "same";
 			mariepetrel		[label = "PETREL\nMarie"];
 			testtt 			[label = "DE FROMONT\nGaspard",style = "invis"];
@@ -483,6 +634,9 @@ digraph gc {
         //gaspardgui -> testtt [style = "invis"];
 			bchahti ->vfauquemerque;
 
+///////////////////////
+// ---- 2025 ---- 
+///////////////////////
 		{ rank = "same";
 			sarahbenoit	[label = <BENOIT-VAMBRE<BR/>Sarah<BR/><I>Respo Rézo</I>> @BDE@ penwidth=4 color="pink"];
 			manonbato 	[label = "BATO\nManon"];
@@ -496,6 +650,9 @@ digraph gc {
 		gaspardgui -> sarahbenoit [penwidth=2 color = "#f05050"];
 		hvanengelandt -> tclerc;
 
+///////////////////////
+// ---- 2026 ---- 
+///////////////////////
 		{ rank = "same";
 			apetitfils  [label = <PETITFILS<BR/>Axel<BR/><I>Respo Goodies/Alternants</I>> @BDE@ penwidth=4 color="purple"];
 			alamy		[label = "LAMY\nArthur"];
@@ -510,17 +667,23 @@ digraph gc {
         valentin -> dcocrelle;
 		vdegroote -> ecagnot;
 		lpocholl -> zloeb [style = "dashed"];
-		{ rank = "same";//2027
+
+///////////////////////
+// ---- 2027 ---- 
+///////////////////////
+		{ rank = "same";
 			epietin 	 [label = <PIETIN<BR/>Ethan<BR/><I>Humaniterre</I>> @PREZ@];
 			imajkrza  	[label = <MAJKRZAK<BR/>Inès<BR/><I>Communication</I>> @BDE@ penwidth=4 color="yellow"];
 			achapat  	[label = <CHAPAT<BR/>Alice<BR/><I>Bar</I>> @PREZ@];
-			slokoto		[label = "LOKOTO\nSamuel"];
+			slokoto 	[label = <LOKOTO<BR/>Samuel<BR/><I>Studio(TRES)(2028)</I>>];
 			jmarches	[label = "MARCHESI\nJustine "];
 			bdenoual	[label = <DENOUAL<BR/>Benjamin<BR/><I>JeanBen LAFRITE<BR/>Inté Events</I>> @BDE@ penwidth=4 color="yellow"];
 			aaauilo		[label = "AAUILO\nAxel"];
 			pprudor		[label = "PRUDOR\nPaul-Alexandre"];
 			hmartin		[label = "MARTIN\nHermine"];
 			llemonni	[label = "LEMONNIER Louis"];
+			odebav 		[label = <DEBAVELAERE<BR/>Oscar<BR/>>];
+			tplatel 	[label = <PLATEL<BR/>Thibault<BR/>>];
         }
 		apetitfils -> epietin;
         lpocholl -> imajkrza;
@@ -532,8 +695,24 @@ digraph gc {
 		mfarenea -> pprudor;
 		ecagnot -> hmartin;
 		mfarenea -> llemonni [style = "dashed"];
-        }
+		alamy -> tplatel;
 
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+		{ rank = "same";
+			cmidavaine 	 [label = <MIDAVAINE<BR/>Clément<BR/>>];
+			ncarel [label = <CAREL<BR/>Noé<BR/><i>Robotech(COM)</i>>];
+        }
+		odebav -> cmidavaine;
+		lpocholl -> ncarel;
+		tplatel -> ncarel [style = dotted];
+
+    }
+
+///////////////////////
+// ---- LEGENDE ---- 
+///////////////////////
 	subgraph cluster_legende {
 		label = "Légende";
 		fillcolor = none;
