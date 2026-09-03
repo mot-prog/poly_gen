@@ -500,6 +500,10 @@ digraph mat {
 			jturlin		[label = <TURLIN<BR/>Julie<BR/><I>BDA</I>> @PREZ@ penwidth=4 color="orange"];
 			mdegroote	[label = <DEGROOTE<BR/>Maxime<BR/>> penwidth=4 color="orange"];	
 			jgagner		[label = "GAGNER\nJulia"];
+			// Déclaration des parrains manquants (Extérieurs ou années inconnues)
+			bange    [label = "BAMURANGE\nAnge"];
+			gdelbe   [label = "DELBE\nGabriele"];
+			bpeyrard [label = "PEYRARD\nBenjamin"];
 		}
 			sduchesne->smuther;
 			qberthod->agengembre;
@@ -526,7 +530,7 @@ digraph mat {
 			gjulia      [label = "GAGNER\nJulia"];
 			gyann       [label = <GASTINEL<BR/>Yann<BR/><I>Inté-évent</I>> @BDE@ @MILLE@];
 			mromane     [label = "MIKOLAJCZYK\nRomane"];
-			balexandre  [label = "BROGNIART\nAlexandre"];
+			balexandre  [label = <BROGNIART<BR/>Alexandre<BR/><I>Respo course Gymnase</I>> @PREZ@];
 		}
 
 		// Liens de parrainage classique

@@ -170,6 +170,13 @@ subgraph cluster_prod {
 			pgeorgelin			[label = <GEORGELIN<BR/>Paul<BR/><I>Trésorier</I>> @BDE@ penwidth=4 color="yellow"];
 			btom				[label = "BRIOLAT\nTom"];
 			gtom				[label = "GRATTEPANCHE\nTom"];
+			esasorith     		[label = "SASORITH\nEvan"];
+			drichard      		[label = "RICHARD\nDavid"];
+			obeutter      		[label = "BEUTTER\nOlivia"];
+			adecaestecker 		[label = "DECAESTECKER\nArthur"];
+			nnauzeret     		[label = "NAUZERET\nNicolas"];
+			hdemaret      		[label = "DEMARET\nHugo"];
+			fmayet        		[label = "MAYET\nFlavien"];
 		}
 		csion -> opatissier;
 		cdeffontaines -> rfuchs;
@@ -185,6 +192,8 @@ subgraph cluster_prod {
 ///////////////////////
 
 		{ rank = "same";//2028
+			hgodefroy     [label = <GODEFROY<BR/>Hector<BR/><I>Respo alternant</I>> @BDE@ @MILLE@];
+			mlilie        [label = <MOUQUET<BR/>Lilie<BR/><I>Communication et alternant</I>> @BDE@ @NEAN@];
 			lborel        [label = "BOREL\nLucas"];
 			ahedar        [label = "HEDAR\nAchraf"];
 			esenicourt    [label = "SENICOURT\nElise"];
@@ -194,8 +203,6 @@ subgraph cluster_prod {
 			gpruvost      [label = "PRUVOST\nGuillaume"];
 			cfriscourt    [label = "FRISCOURT\nCharlise"];
 			znakro        [label = "NAKRO\nZineb"];
-			hgodefroy     [label = <GODEFROY<BR/>Hector<BR/><I>Respo alternant</I>> @BDE@ penwidth=4 color="red"];
-			mlilie        [label = <MOUQUET<BR/>Lilie<BR/><I>Communication et alternant</I>> @BDE@ penwidth=4 color="blue"];
 			mrieu         [label = "RIEU\nMarius"];
 			mcarpentier   [label = "CARPENTIER\nMathéo"];
 			scourtade     [label = "COURTADE\nSimon"];
@@ -211,24 +218,24 @@ subgraph cluster_prod {
 		// Liens de parrainage classique
 		eandouche -> lborel;
 		opatissier -> esenicourt;
-		esasorith -> yellart;       // parrain n'est pas sur l'arbre
-		drichard -> gpruvost;       // parrain n'est pas sur l'arbre
+		esasorith -> yellart;       
+		drichard -> gpruvost;       
 		btom -> cfriscourt;
 		gtom -> znakro;
 		obeutter -> hgodefroy;
 		obeutter -> mlilie;
-		thomas -> mlilie;           // mentionné comme "Thomas ?"
-		romy -> mlilie;             // mentionné comme "Romy ?"
+		thomas -> mlilie;           
+		romy -> mlilie;             
 		scourtade -> mrieu;
-		nnauzeret -> mcarpentier;   // parrain n'est pas sur l'arbre
+		nnauzeret -> mcarpentier;   
 		mrieu -> scourtade;
-		hdemaret -> hbeauzamy;      // parrain n'est pas sur l'arbre
+		hdemaret -> hbeauzamy;      
 		mthys -> bcouppoussamy;
 		tcami -> lcoussemacq;
 		adecaestecker -> aleroy;
 
 		// Liens de parrainage adoptif
-		fmayet -> cverhaeghe [style=dashed];        // parrain adoptif n'est pas sur l'arbre
+		fmayet -> cverhaeghe [style=dashed];        
 		btom -> znakro [style=dashed];
 		adecaestecker -> hgodefroy [style=dashed];
 		gtom -> bcouppoussamy [style=dashed];

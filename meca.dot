@@ -528,6 +528,11 @@ digraph meca {
 			rmarchan    [label = <MARCHAND<BR/>Robin<BR/><I>Fanfare</I>>, @PREZ@, penwidth=4, color="orange"];
 			lducoura    [label = <DUCOURANT<BR/>Lucie<BR/><I>Agrimentaire</I>>, @PREZ@];
 			nliadouze   [label = "LIADOUZE\nNicolas"];
+			// Déclaration des parrains manquants (Extérieurs ou années inconnues)
+			hkhaif    [label = "KHAIF\nHiba"];
+			mcarnelez [label = "CARNELEZ\nMaxime"];
+			dmouron   [label = "MOURON\nDriss"];
+			fgerard   [label = "GERARD\nFiona"];
 		}
 
 			trobin -> erodilha;
@@ -555,37 +560,39 @@ digraph meca {
 ///////////////////////
 
 	{ rank = "same";//2028
-		etivollier  [label = <TIVOLLIER<BR/>Eliott> penwidth=4 color="orange"];
-		anoorbig    [label = <NOORBIG<BR/>Ahmad Al<BR/><I>Robotech (Resp meca)</I>>];
+		etivollier  [label = <TIVOLLIER<BR/>Eliott<BR/><I> </I>> @ALP@];
+		anoorbig    [label = <NOORBIG<BR/>Ahmad Al<BR/><I>Robotech (Resp meca)</I>> @PREZ@];
 		plallement  [label = "LALLEMENT\nPietre"];
-		pconstantin [label = <CONSTANTIN<BR/>Paul<BR/><I>Race</I>> @PREZ@ penwidth=4 color="pink"];
+		pconstantin [label = <CONSTANTIN<BR/>Paul<BR/><I>Race</I>> @PREZ@ @BARB@];
 		lghesquiere [label = "GHESQUIÈRE\nLilian"];
 		cvigneron   [label = "VIGNERON\nClément"];
-		yhardouin   [label = <HARDOUIN<BR/>Yoann<BR/><I>Inté-Event</I>> @BDE@ penwidth=4 color="purple"];
+		yhardouin   [label = <HARDOUIN<BR/>Yoann<BR/><I>Inté-Event</I>> @BDE@ @MILLE@];
 		mroger      [label = "ROGER\nMathurin"];
-		jtousch     [label = <TOUSCH<BR/>Julien<BR/><I>Communication</I>> @BDE@ penwidth=4 color="purple"];
+		jtousch     [label = <TOUSCH<BR/>Julien<BR/><I>Communication</I>> @BDE@ @MILLE@];
 		hlengoye    [label = "LENGOYE\nHélène"];
-		dberti      [label = <BERTI<BR/>Damien<BR/><I>Parts/Goodies</I>> @BDE@ penwidth=4 color="blue"];
-		aaboutarik  [label = <ABOUTARIK<BR/>Ayman> penwidth=4 color="purple"];
+		dberti      [label = <BERTI<BR/>Damien<BR/><I>Parts/Goodies</I>> @BDE@ @NEAN@];
+		aaboutarik  [label = <ABOUTARIK<BR/>Ayman<BR/><I> </I>> @MILLE@];
 		zlambert    [label = "LAMBERT\nZoé"];
 		iabed       [label = "ABED\nIliès"];
-		tmontagne   [label = <MONTAGNE<BR/>Thomas<BR/><I>Event BDS</I>> @PREZ@ penwidth=4 color="pink"];
-		eremy       [label = <REMY<BR/>Eliott<BR/><I>Pôle DD</I>> @BDE@ penwidth=4 color="purple"];
-		alaforest   [label = <LAFOREST<BR/>Aurélie> penwidth=4 color="pink"];
-		jfayet      [label = <FAYET<BR/>Josselyn<BR/><I>Trésorier</I>> @BDE@ penwidth=4 color="blue"];
+		tmontagne   [label = <MONTAGNE<BR/>Thomas<BR/><I>Event BDS</I>> @PREZ@ @BARB@];
+		eremy       [label = <REMY<BR/>Eliott<BR/><I>Pôle DD</I>> @BDE@ @MILLE@];
+		alaforest   [label = <LAFOREST<BR/>Aurélie<BR/><I> </I>> @BARB@];
+		jfayet      [label = <FAYET<BR/>Josselyn<BR/><I>Trésorier</I>> @BDE@ @NEAN@];
 		cmariette   [label = "MARIETTE\nConstant"];
 		lhak        [label = "HAK\nLéo"];
-		nroy        [label = <ROY<BR/>Noéline<BR/><I>Team prev</I>> @BDE@ penwidth=4 color="blue"];
+		nroy        [label = <ROY<BR/>Noéline<BR/><I>Team prev</I>> @BDE@ @NEAN@];
 		nrocher     [label = "ROCHER\nNicolas"];
 		priche      [label = "RICHE\nPhilippe"];
-		tflageolet  [label = <FLAGEOLET<BR/>Thomas> penwidth=4 color="pink"];
+		tflageolet  [label = <FLAGEOLET<BR/>Thomas<BR/><I> </I>> @BARB@];
 		lnadler     [label = "NADLER\nLucas"];
+
+
 	}
 
 		// Liens de parrainage classique
 		ariom -> etivollier;
 		tboutros -> plallement;
-		hkhaif -> pconstantin; // parrain n'est pas sur l'arbre
+		hkhaif -> pconstantin; 
 		nliadouze -> cvigneron;
 		atalon -> yhardouin [penwidth=2 color = "#f05050"];
 		tboutros -> mroger;
@@ -593,17 +600,17 @@ digraph meca {
 		gdelanoe -> jtousch [penwidth=2 color = "#f05050"];
 		lducoura -> dberti;
 		adebas -> aaboutarik;
-		mcarnelez -> zlambert; // parrain n'est pas sur l'arbre
+		mcarnelez -> zlambert; 
 		atalon -> eremy [penwidth=2 color = "#f05050"];
-		echampig -> alaforest; // Correction de echampignon
+		echampig -> alaforest; 
 		rmarchan -> jfayet;
 		vvampoui -> cmariette;
 		antonvil -> nroy;
 		iabed -> nrocher;
 
 		// Liens de parrainage adoptif (nouveaux ajouts)
-		dmouron -> dberti [style=dashed]; // Mouron Driss n'est pas sur l'arbre
-		fgerard -> alaforest [style=dashed]; // Fiona Gerard n'est pas sur l'arbre
+		dmouron -> dberti [style=dashed]; 
+		fgerard -> alaforest [style=dashed]; 
 		breynaud -> jfayet [style=dashed penwidth=2 color = "#f05050"];
 			}
 
