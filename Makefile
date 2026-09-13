@@ -1,4 +1,4 @@
-TARGETS=alternants se 2ia gba meca gc is mat 2GU Prod
+TARGETS=alternants se 2ia gba meca gc is mat 2GU Prod 
 SVGs=$(addsuffix .svg,$(TARGETS))
 JPGs=$(addsuffix .jpg,$(TARGETS))
 PDFs=$(addsuffix .pdf,$(TARGETS))

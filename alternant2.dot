@@ -14,13 +14,46 @@ digraph alternants {
 
 	rankdir = LR;
 
+	///////////////////////
+	// ---- PROMOS ---- 
+	///////////////////////
+	subgraph cluster_promos {
+		label = "Promos";
+		penwidth = 0;
+		color = none;
+		node [shape = none];
+		"2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026" -> "2027" -> "2028";
+	}
+
+	///////////////////////
+	// ---- LÉGENDE ---- 
+	///////////////////////
+	subgraph cluster_legende {
+		label = "Légende";
+		fillcolor = none;
+		leg_parrain	[label = "Parrain"];
+		leg_fillot	[label = "Fillot"];
+		leg_fillotadop	[label = "Fillot Adoptif"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> @BDE@];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> @PREZ@];
+		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
+		
+		leg_parrain -> leg_fillot;
+		leg_parrain -> leg_fillotadop [style = "dashed"];
+	}
+
+	///////////////////////
+	// ---- 2GU ---- 
+	///////////////////////
 	subgraph cluster_2GU {
 		label = "2GU";
 		fillcolor = "#ada59c";
-		{ rank="same";
-			tes 			[color = "#ada59c" fillcolor = "#ada59c" fontcolor = "#ada59c"];
+		
+		{ rank="same"; // Point d'ancrage invisible 2021
+			blank_2gu_2021 [color = "invis" fillcolor = "invis" fontcolor = "invis" label=""];
 		}
-		{ rank="same";
+		
+		{ rank="same"; // 2022
 			alexandregall	[label = "GALLOIS\nAlexandre"];
 			alexandresant	[label = <SANTENS<BR/>Alexandre<BR/><I>PULCE</I>> @PREZ@];
 			elodievan	[label = "VANDERMALIÈRE\nÉlodie"];
@@ -34,8 +67,9 @@ digraph alternants {
 			paulrive	[label = <RIVÉ<BR/>Paul<BR/><I>Respo Alternants/Com</I>> @BDE@ penwidth=4 color="deeppink"];
 			thomasbrs	[label = "BRS\nThomas"];
 		}
-			tes-> thomasbrs [penwidth=2 color = "invis"];
-		{ rank="same";
+		blank_2gu_2021 -> thomasbrs [penwidth=2 color = "invis"];
+
+		{ rank="same"; // 2023
 			fannybroc	[label = "BROCOT\nFanny"];
 			imanebounou	[label = "BOUNOU\nImane"];
 			ineslazre	[label = "LAZREQ\nInes"];
@@ -58,7 +92,7 @@ digraph alternants {
 		paulrive -> samuelbienv [penwidth=2 color = "#f05050"];
 		thomasbrs -> leilalogi;
 
-		{ rank="same";
+		{ rank="same"; // 2024
 			albinneu	[label = <<table border="0">
 							<tr><td border="0">NEUTS<BR/>Albin</td></tr>
 							<tr><td border="4" color="deeppink"><I>Respo PeiP</I></td></tr>
@@ -91,7 +125,8 @@ digraph alternants {
 		samuelbienv -> albinneu [penwidth=2 color = "#f05050"];
 		samuelbienv -> louishetr;
 		youssraelmou -> lukasalb;
-		{ rank = "same";
+
+		{ rank = "same"; // 2025
 			antoinesim [label = <SIMON<BR/>Antoine<BR/><I>Respo Communication</I>> @BDE@ penwidth=4 color="pink"];
 			lilouflo   [label = "FLORENT\nLilou"];
 			louiskerv  [label = "KERVELLA\nLouis"];
@@ -112,27 +147,27 @@ digraph alternants {
 			leobernae    [label = "BERNAERT\nLéo"];
 			ldebast  [label = "DEBAST\nLouison"];
 			azarktouni [label = "ZARKTOUNI\nAchraf"];
-
 		}
-			albinneu -> antoinesim [penwidth=2 color = "#f05050"];
-			albinneu -> lilouflo;
-			louishetr -> louiskerv;
-			louishetr -> julestrip;
-			nicolaslew -> gaiapaci;
-			charlottefor -> romainlop;
-			emilieguer -> maddyporc;
-			emilieguer -> elisaquen;
-			paullebo -> etiennedel;
-			paullebo -> simonverr;
-			lisarouss -> arthurach;
-			loicmariet -> gauthierpl;
-			lealachere -> ameliegra;
-			lealachere -> laurawan;
-			titouancheva -> clementmar;
-			titouancheva -> loucandyce;
-			lukasalb -> phillippela;
-        	lukasalb -> leobernae;
-		{ rank = "same";
+		albinneu -> antoinesim [penwidth=2 color = "#f05050"];
+		albinneu -> lilouflo;
+		louishetr -> louiskerv;
+		louishetr -> julestrip;
+		nicolaslew -> gaiapaci;
+		charlottefor -> romainlop;
+		emilieguer -> maddyporc;
+		emilieguer -> elisaquen;
+		paullebo -> etiennedel;
+		paullebo -> simonverr;
+		lisarouss -> arthurach;
+		loicmariet -> gauthierpl;
+		lealachere -> ameliegra;
+		lealachere -> laurawan;
+		titouancheva -> clementmar;
+		titouancheva -> loucandyce;
+		lukasalb -> phillippela;
+		lukasalb -> leobernae;
+
+		{ rank = "same"; // 2026
 			pledoeuf  	[label = "LEDOEUF\nPierre-Louis"];
 			egautier 	[label = <GAUTIER<BR/>Emilie<BR/><I>Respo Alternants</I>> @BDE@ penwidth=4 color="green"];
 			cviella  	[label = "VIELLA\nCharlotte"];
@@ -156,7 +191,8 @@ digraph alternants {
 		phillippela->azarktouni;
 		gauthierpl->azarktouni;
 		leobernae->egautier;
-		{ rank = "same";//2027
+
+		{ rank = "same"; // 2027
 			aacunapi  	[label = "ACUNA PINTOS\nAgustin"];
 			onedey 	[label = <NEDEY<BR/>Oscar<BR/><I>Respo Alternants et International</I>>, @BDE@, penwidth=4, color="yellow"];
 			mdelarue 	[label = <DELARUE<BR/>Maëlle<BR/>>, penwidth=4, color="orange"];
@@ -179,7 +215,7 @@ digraph alternants {
 		laurawan->lcoelho;
 		mgeorges->hheyd;
 
-        { rank = "same";
+		{ rank = "same"; // 2028
 			mleon	  	[label = "LEON\nMaurine"];
 			tlesaffre  	[label = "LESAFFRE\nTom"];
 			ppuchois  	[label = "PUCHOIS\nPaul"];
@@ -187,7 +223,7 @@ digraph alternants {
 			mbonnet  	[label = "BONNET\nMathieu"];
 			ssmara  	[label = "SMARA\nSana"];
 			rgrioche  	[label = "GRIOCHE\nRomane"];
-        }
+		}
 		mgeorges -> mleon;
 		tfaucon -> tlesaffre;
 		aacunapi -> ppuchois;
@@ -197,29 +233,31 @@ digraph alternants {
 		cviella -> rgrioche;
 	}
 
+	///////////////////////
+	// ---- PROD ---- 
+	///////////////////////
 	subgraph cluster_prod {
 		label = "Prod";
 		fillcolor = "#B2F2EC";
 
-		{ rank = "same";//2021
+		{ rank = "same"; //2021
 			maximegrapt	[label = "GRAPTON\nMaxime"];
 		}
 
-		{ rank = "same";//2022
+		{ rank = "same"; //2022
 			vianneypon	[label = "PONCET\nVianney"];
 			timothebr   [label = "BROUSSART\nTimothée"];
 		}
 		maximegrapt -> vianneypon;
-		//maximegrapt -> elodievan;
 		
-		{ rank = "same";//2023
+		{ rank = "same"; //2023
 			lisaboue	[label = "BOUE\nLisa"];
 			maximeder   [label = "DERCOURT\nMaxime"];
 		}
 		vianneypon -> lisaboue;
 		timothebr->maximeder;
 
-		{ rank = "same";//2024
+		{ rank = "same"; //2024
 			antoinelepr	[label = "LEPRINCE\nAntoine" penwidth=4 color="orange"];
 			hugoleja	[label = "LEJAY\nHugo"];
 			thomasfris [label = "FRISSON\nThomas"];
@@ -242,7 +280,7 @@ digraph alternants {
 		lisaboue -> antoinelepr;
 		lisaboue -> hugoleja;
 
-		{ rank = "same";//2025
+		{ rank = "same"; //2025
 		    graffard 	[label = "RAFFARD\nGuillaume"];
 			ehecquet 	[label = "HECQUET\nEdhouard"];
 			mrodriguez 	[label = "RODRIGUEZ\nMaxime"];
@@ -298,7 +336,7 @@ digraph alternants {
 		rbilly -> aletombe;
 		aantonio ->  nmanuel;
 
-        { rank = "same";//2026
+        { rank = "same"; //2026
 			cboukoro 		[label = "BOUKORO\nCliff Borman"];
 			bcagnard 		[label = "CAGNARD\nBrandon"];
 			acampo 			[label = "CAMPOS MAIA\nAlexandre"];
@@ -308,7 +346,7 @@ digraph alternants {
 			aloonis 		[label = "LOONIS\nAntoine"];
 			ematran 		[label = "MATRAN\nElise"];
 			smechname 		[label = "MECHNAME\nSandra"];
-			csion 			[label =<SION<BR/>Carolie<BR/><I>Gymnase</I>> @PREZ@];
+			csion 			[label =<SION<BR/>Coralie<BR/><I>Gymnase</I>> @PREZ@];
 			ltherene 		[label = "THERENE\nLoic"];
 			ctourret 		[label = "TOURRET\nConstant"];
 			avasseur 		[label = "VASSEUR\nAlexandre"];
@@ -318,7 +356,6 @@ digraph alternants {
 			cguillaume 		[label = "GUILLAUME\nColin"];
 			ndelplanque 	[label = "DELPLANQUE\nNicolas"];
 			aolivier 		[label = "OLIVIER\nAugustin"];
-			
         }
         graffard-> cboukoro;
 		ehecquet -> bcagnard;
@@ -342,22 +379,29 @@ digraph alternants {
 		mlefebvre -> aolivier;
 		kylianbroha -> ablomme; 
         
-		{ rank = "same";//2027
+		{ rank = "same"; //2027
 			opatissier			[label = "PATISSIER\nOthilie"];
-			rfuchs                          [label = "FUCHS\nRomy"];
+			rfuchs              [label = "FUCHS\nRomy"];
 			eandouche			[label = "ANDOUCHE\nEtienne"];
 			tcami				[label = "CAMI\nThomas"];
 			mthys				[label = "THYS\nMaximilien"];
 			pgeorgelin			[label = <GEORGELIN<BR/>Paul<BR/><I>Trésorier</I>> @BDE@ penwidth=4 color="yellow"];
 			btom				[label = "BRIOLAT\nTom"];
 			gtom				[label = "GRATTEPANCHE\nTom"];
+			esasorith     		[label = "SASORITH\nEvan"];
+			drichard      		[label = "RICHARD\nDavid"];
+			obeutter      		[label = "BEUTTER\nOlivia"];
+			adecaestecker 		[label = "DECAESTECKER\nArthur"];
+			nnauzeret     		[label = "NAUZERET\nNicolas"];
+			hdemaret      		[label = "DEMARET\nHugo"];
+			fmayet        		[label = "MAYET\nFlavien"];
 		}
 		csion -> opatissier;
 		cdeffontaines -> rfuchs;
 		lerbland -> eandouche;
-		jcarvilles -> tcami;
+		jcarville -> tcami;
 		cdeffontaines -> mthys;
-		cdeffontaines -> pgeorgelin;
+		cdeffontaines -> pgeorgelin [penwidth=2 color = "#f05050"];
 		jcarville -> btom;
 		jcarville -> gtom;
 
@@ -407,48 +451,51 @@ digraph alternants {
 		gtom -> bcouppoussamy [style=dashed];
 		tcami -> aleroy [style=dashed];
 	}
+
+	///////////////////////
+	// ---- GC2A ---- 
+	///////////////////////
 	subgraph cluster_GC2A {
 		label = "GC2A";
 		fillcolor = "#ff9f43";
-
-		{ rank = "same";
+		
+		{ rank = "same"; // 2021
+			tesss [color = "invis" fillcolor = "invis" fontcolor = "invis" label=""];
 			alexpiton	[label = <PITON<BR/>Alex<BR/><I>Respo Alternants</I>> @BDE@ penwidth=4 color="blue"];
 		}
-		{ rank = "same";
+		tesss -> alexpiton [penwidth=4 color="invis"];
+		
+		{ rank = "same"; // 2022
             quentinmas [label = "MASCRET\nQuentin" penwidth=4 color="white"];
-			
 		}
 		alexpiton->quentinmas;
 
-		{ rank = "same";
+		{ rank = "same"; // 2023
 			gaspardgui	[label = <DE FROMONT<BR/>Gaspard<BR/><I>Vice-Président Externe</I>> @BDE@ penwidth=4 color="purple"];
 			bchahti		[label = "CHAHTI\nBilal"];
-			
 		}
         quentinmas->gaspardgui;
-		{ rank = "same";
+
+		{ rank = "same"; // 2024
 			mariepetrel		[label = "PETREL\nMarie"];
-			testtt 			[label = "DE FROMONT\nGaspard",style = "invis"];
 			vfauquemerque	[label = "FAUQUEMBERQUE\nValentin"];
 			hvanengelandt	[label = "VANENGELANDT\nHugo"];
 		}
-        //gaspardgui -> testtt [style = "invis"];
-			bchahti ->vfauquemerque;
+		bchahti ->vfauquemerque;
 		
-		{ rank = "same";
+		{ rank = "same"; // 2025
 			sarahbenoit	[label = <BENOIT-VAMBRE<BR/>Sarah<BR/><I>Respo Rézo</I>> @BDE@ penwidth=4 color="pink"];
 			manonbato 	[label = "BATO\nManon"];
 			valentin	[label = "Valentin"];
 			kroy		[label = "ROY\nJorys"];
 			vdegroote	[label = "DE GROOTE\nValentine"];
 			tclerc		[label = <CLERC<BR/>Théo<BR/><I>Respo Alternants</I>> @BDE@ penwidth=4 color="blue"];
-
 		}
 		mariepetrel-> sarahbenoit;
 		gaspardgui -> sarahbenoit;
 		hvanengelandt -> tclerc;
 
-		{ rank = "same";
+		{ rank = "same"; // 2026
 			apetitfils  [label = <PETITFILS<BR/>Axel<BR/><I>Respo Goodies/Alternants</I>> @BDE@ penwidth=4 color="purple"];
 			alamy		[label = "LAMY\nArthur"];
 			rsalameh	[label = "SALAMEH\nRebecca"];
@@ -461,7 +508,7 @@ digraph alternants {
         valentin -> dcocrelle;
 		vdegroote -> ecagnot;
 
-		{ rank = "same";//2027
+		{ rank = "same"; // 2027
 			epietin 	 [label = <PIETIN<BR/>Ethan<BR/><I>Humaniterre</I>> @PREZ@];
 			imajkrza  	[label = <MAJKRZAK<BR/>Inès<BR/><I>Communication</I>> @BDE@ penwidth=4 color="yellow"];
 			achapat  	[label = <CHAPAT<BR/>Alice<BR/><I>Bar</I>> @PREZ@];
@@ -472,8 +519,8 @@ digraph alternants {
 			pprudor		[label = "PRUDOR\nPaul-Alexandre"];
 			hmartin		[label = "MARTIN\nHermine"];
 			llemonni	[label = "LEMONNIER Louis"];
-			odebav 		[label = <DEBAVELAERE<BR/>Oscar<BR/>>];
-			tplatel 	[label = <PLATEL<BR/>Thibault<BR/>>];
+			odebav      [label = <DEBAVELAERE<BR/>Oscar<BR/>>];
+			tplatel     [label = <PLATEL<BR/>Thibault<BR/>>];
         }
 		apetitfils -> epietin;
         lpocholl -> imajkrza;
@@ -486,27 +533,29 @@ digraph alternants {
 		ecagnot -> hmartin;
 		mfarenea -> llemonni [style = "dashed"];
 
-		{ rank = "same";
-			cmidavaine 	 [label = <MIDAVAINE<BR/>Clément<BR/>>];
-			ncarel [label = <CAREL<BR/>Noé<BR/><i>Robotech(COM)</i>>];
-        }
+		{ rank = "same"; // 2028
+			cmidavaine      [label = <MIDAVAINE<BR/>Clément<BR/>>];
+			ncarel 			[label = <CAREL<BR/>Noé<BR/><i>Robotech(COM)</i>>];
+		}
 		odebav -> cmidavaine;
 		lpocholl -> ncarel;
 		tplatel -> ncarel [style = dotted];
-
     }
 
+	///////////////////////
+	// ---- SE2A ---- 
+	///////////////////////
 	subgraph cluster_SE2A {
 		label = "SE2A";
 		fillcolor = "#FFE0E0";
 
-		{ rank = "same";//2021
+		{ rank = "same"; // 2021
 			bertillesor	[label = <SORIN<BR/>Bertille<BR/><I>Respo Com</I>> @BDE@ penwidth=4 color = "blue"];
 			guillaumeherb	[label = "HERBOMEL\nGuillaume"];
 			nathancoulon	[label = "COULON\nNathan"];
 		}
 
-		{ rank = "same";//2022
+		{ rank = "same"; // 2022
 			leavicio	[label = "VICIOT\nLéa"];
 			nicolaserc	[label = "ERCEAU\nNicolas"];
 			thomasobl	[label = <OBLED<BR/>Thomas<BR/><I>Partenariats/Goodies</I>> @BDE@ penwidth=4 color="deeppink"];
@@ -515,7 +564,7 @@ digraph alternants {
 		guillaumeherb -> leavicio;
 		nathancoulon -> nicolaserc;
 
-		{ rank = "same";//2023
+		{ rank = "same"; // 2023
 			tombiot		[label="BIOT\nTom"];
 			adjonard		[label="JONARD\nAdrien"];
 			antoninm     [label = "MACE\nAntonin"];
@@ -523,7 +572,7 @@ digraph alternants {
 		thomasobl -> tombiot [style=dashed];
 		thomasobl -> adjonard;
 
-		{ rank = "same";//2024
+		{ rank = "same"; // 2024
 			remideteve	[label=<Detève<BR/>Rémi<BR/><I>Vice-Président Externe</I>> @BDE@ penwidth=4 color="yellow"];
 			martinserg	[label=<Sergeant<BR/>Martin<BR/><I>Respo Alternants</I>> @BDE@ penwidth=4 color="yellow"];
 			smarolleau	[label = "MAROLLEAU\nSimon"];
@@ -533,33 +582,36 @@ digraph alternants {
 		adjonard-> smarolleau;
 		antoninm -> faridlazou;
 
-		{ rank = "same";//2025
+		{ rank = "same"; // 2025
 			elvispet [label = "PEETERMANS\nElvis"];
 			juliettec [label ="CHEVALIER\nJuliette"];
 		}
         faridlazou -> elvispet;
         smarolleau -> juliettec;
 
-        { rank="same";//2026
-			tess 			[color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+        { rank="same"; // 2026
+			tess 			[color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0" label=""];
 			akerhasco  [label = <KERHASCOËT<BR/>Arthur<BR/><I>Respo Inté/Events</I><BR/>SE> @BDE@ penwidth=4 color="green"];
 		}
 		juliettec -> tess  [penwidth=2 color = "invis"];
 
-		{ rank="same";//2027
+		{ rank="same"; // 2027
 			hzekri	[label ="ZEKRI\nHossam"];
-			rduhamel [label = "DUHAMEL\nRaphaël\n(SE)"];
-			eperdrix [label = "PERDRIX\nE.\n(SE)"];
 		}
 		akerhasco -> hzekri;
 	}
-		
-///////////////////////
+
+	///////////////////////
 	// ---- EIF2A ---- 
 	///////////////////////
 	subgraph cluster_EIF2A {
 		label = "EIF2A";
 		fillcolor = "#e7905e";
+
+		{ rank="same"; //2027
+			rduhamel [label = "DUHAMEL\nRaphaël\n(SE)"];
+			eperdrix [label = "PERDRIX\nE.\n(SE)"];
+		}
 
 		{ rank="same"; //2028
 			jbrugot    [label =<BRUGOT<BR/>Jules<BR/><I>Prévention / DD</I>> @BDE@ @NEAN@];
@@ -574,26 +626,27 @@ digraph alternants {
 		eperdrix -> flament [style = "dashed"];
 	}
 
-	endnode [style=invis];
+	///////////////////////
+	// ---- ORDRE VERTICAL ---- 
+	///////////////////////
 	
-	subgraph cluster_promos {
-		label = "Promos";
-		penwidth = 0;
-		color = none;
-		node [shape = none];
-		"2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026" -> "2027" -> "2028";
+	// Cette contrainte invisible force TOUTE l'architecture à s'empiler
+	// proprement de haut en bas sur la colonne 2021.
+	{ rank = "same";
+		leg_parrain;
+		"2021";
+		blank_2gu_2021;
+		maximegrapt;
+		tesss;
+		bertillesor;
 	}
+	leg_parrain -> "2021" -> blank_2gu_2021 -> maximegrapt -> tesss -> bertillesor [style=invis];
 
-	subgraph cluster_legende {
-		label = "Légende";
-		fillcolor = none;
-		leg_parrain	[label = "Parrain"];
-		leg_fillot	[label = "Fillot"];
-		leg_fillotadop	[label = "Fillot Adoptif"];
-		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> @BDE@];
-		leg_prez	[label = <Président de club<BR/><I>Club</I>> @PREZ@];
-		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
-		leg_parrain -> leg_fillot;
-		leg_parrain -> leg_fillotadop [style = "dashed"];
+	// Lien invisible pour empiler correctement EIF2A sous SE2A
+	{ rank = "same";
+		hzekri;
+		rduhamel;
 	}
+	hzekri -> rduhamel ;
+
 }
