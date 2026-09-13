@@ -20,7 +20,7 @@ digraph gba {
 		color = none;
 		node [shape = none];
 
-		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
 	}
 	
     	subgraph cluster_legende {
@@ -518,7 +518,7 @@ digraph gba {
 		ngonzalez	[label = <GONZALEZ<BR/>Nathan<BR/><I>Respo DD/Prev</I>> @BDE@ penwidth=4 color="green"];
 		mtrobo		[label = "TROBO\nMay-Linn" penwidth=4 color="purple"];
 		edurand		[label = <DURAND<BR/>Emilie<BR/><I>Pompoms</I>> penwidth=4 color="purple" @PREZ@];
-		cbellanger	[label = <BELLANGER<BR/>Cylia<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="purple"];
+		cbellanger	[label = <BELLANGER<BR/>Cylia<BR/><I>Respo Clubs<BR/>Polydance</I>> penwidth=4 color="purple" fillcolor="#f05050:yellow"];
 		hlorin		[label = "LORIN\nHugo" penwidth=4 color="purple"];
 		charzic		[label = <HARZIC<BR/>Clémence<BR/><I>Respo Clubs</I>> @BDE@ penwidth=4 color="green"];
 		labravanel	[label = <ABRAVANEL<BR/>Lina<BR/><I>Vice-présidente / Respo International</I>> @BDE@ penwidth=4 color="green"];
@@ -580,6 +580,7 @@ digraph gba {
 	jeanbaptiste-> cchopin;
 	clemencebou	-> lalglave;
 
+// ----- 2027 -----
 	{rank = "same";
 				ploiseleur	[label = "LOISELEUR\nPauline"];
 				jtoussaint		[label = "TOUSSAINT\nJacques"];
@@ -601,6 +602,13 @@ digraph gba {
 				rdufour			[label = <DUFOUR<BR/>Rémy<BR/><I>Respo Club</I>> @BDE@ penwidth=4 color="yellow"];
 				nleroy			[label = "LEROY\nNicolas"];
 				aboterman		[label = "BOTERMAN\nArthur"];
+				//ajouts
+				mliegaux [label = "LIEGAUX\nMaelys" penwidth=4 color="orange"];
+				ilecoufle [label = "LECOUFLE\nInès"];
+				tmichaut [label = "MICHAUT\nTatiana"];
+				cpavy [label = "PAVY\nClotilde"];
+				kngo [label = "NGO\nKillian"];
+				fdiallo [label = "DIALLO\nFatoumata"];
 				}
 	maelleherv -> ploiseleur;
 	jademelet -> ploiseleur [style=dashed];
@@ -625,6 +633,53 @@ digraph gba {
 	hlorin -> rdufour;
 	kdavignon -> nleroy;
 	brobillard -> aboterman;	
+
+// ----- 2028 -----
+	{ rank = "same";
+		ebailly [label = <BAILLY<BR/>Emma<BR/><I>Pompom<BR/>Goodies (Polyflèches)</I>> ];
+		tmartin [label = <MARTIN<BR/>Théa<BR/><I>Resp sieste (Polyflèches)</I>> ];
+		acerveto [label = <CERVETO<BR/>Alexis<BR/><I>Trez et Com<BR/>(Robotech + Polyflèches)</I>> ];
+		lvanlande [label = <VANLANDE<BR/>Léa<BR/><I>Club / Polyjam</I>> @BDE@ @MILLE@ ];
+		iyayilkan [label = <YAYILKAN<BR/>Ilhan<BR/><I>Resp Sécurité (Polyflèches)</I>> ];
+		cbaron [label = <BARON<BR/>Carla<BR/><I>Communication<BR/>VP (Pompom)</I>> @BDE@ @NEAN@ ];
+		felhoumaidi [label = <ELHOUMAIDI<BR/>FatimaZahra> ];
+		scarre [label = <CARRE<BR/>Salomé> ];
+		mollivier [label = <OLLIVIER<BR/>Maxime<BR/><I>VP (Polyflèches)</I>> ];
+		mbouret [label = <BOURET<BR/>Mattéo<BR/><I>VP et fléchettes<BR/>(Polyflèches)</I>> ];
+		azuo [label = <ZUO<BR/>Aline<BR/><I>Polydance<BR/>Mots fléchés (Polyflèches)</I>> @PREZ@ ];
+		gtremayne [label = <TREMAYNE<BR/>Guillaume<BR/><I>Polyflèches</I>> @PREZ@ ];
+		shaemers [label = <HAEMERS<BR/>Salomé<BR/><I>Resp goûter(Polyflèches)<BR/>Studio</I>> ];
+		cdubois [label = <DUBOIS<BR/>Camille<BR/><I>Mots fléchés (Polyflèches)</I>> ];
+		lclaisse [label = <CLAISSE<BR/>Lisa<BR/><I>Pompom<BR/>Pilâtes (BDS)</I>> @PREZ@ ];
+		fgirardot [label = <GIRARDOT<BR/>Floriane<BR/><I>Mots fléchés (Polyflèches)</I>> ];
+		eleguennec [label = <LE GUENNEC<BR/>Ewan<BR/><I>VP et triple 20<BR/>(Polyflèches)</I>> ];
+		cdabit [label = <DABIT<BR/>Camille<BR/><I>Event (Polyflèches)</I>> ];
+		jbariseel [label = <BARISEEL<BR/>Julie<BR/><I>Inté Évent</I>> @BDE@ @NEAN@ ];
+		mmenil [label = <MENIL<BR/>Manon<BR/><I>Resp goûter(Polyflèches)</I>> ];
+		lgermain [label = <GERMAIN<BR/>Loan> ];
+		lnorgeux [label = <NORGEUX<BR/>Laura<BR/><I>VP (Pompom)<BR/>Resp cible (Polyflèches)</I>> ];
+	}
+	amoy -> ebailly;
+	ohourdin -> tmartin;
+	aboterman -> acerveto;
+	jboisrame -> lvanlande [color = "#f05050"];
+	mliegaux -> iyayilkan;
+	mduthoit -> cbaron;
+	jtoussaint -> scarre;
+	mbaey -> mollivier;
+	slegesse -> mbouret;
+	ilecoufle -> azuo;
+	nleroy -> gtremayne;
+	abreton -> shaemers;
+	tmichaut -> cdubois;
+	lpierson -> lclaisse;
+	cpavy -> fgirardot;
+	kngo -> eleguennec;
+	lmeudic -> cdabit;
+	fdiallo -> jbariseel;
+	amoy -> jbariseel [style=dashed]; 
+	mdufour -> mmenil;
+	ecarle -> lnorgeux;
     }
 
 	endnode [style=invis];

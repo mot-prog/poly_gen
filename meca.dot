@@ -560,7 +560,7 @@ digraph meca {
 ///////////////////////
 
 	{ rank = "same";//2028
-		etivollier  [label = <TIVOLLIER<BR/>Eliott<BR/><I> </I>> @ALP@];
+		etivollier  [label = <TIVOLLIER<BR/>Eliott> @ALP@];
 		anoorbig    [label = <NOORBIG<BR/>Ahmad Al<BR/><I>Robotech (Resp meca)</I>>];
 		plallement  [label = "LALLEMENT\nPietre"];
 		pconstantin [label = <CONSTANTIN<BR/>Paul<BR/><I>Race</I>> @PREZ@ @BARB@];
@@ -571,19 +571,19 @@ digraph meca {
 		jtousch     [label = <TOUSCH<BR/>Julien<BR/><I>Communication</I>> @BDE@ @MILLE@];
 		hlengoye    [label = "LENGOYE\nHélène"];
 		dberti      [label = <BERTI<BR/>Damien<BR/><I>Parts/Goodies</I>> @BDE@ @NEAN@];
-		aaboutarik  [label = <ABOUTARIK<BR/>Ayman<BR/><I> </I>> @MILLE@];
+		aaboutarik  [label = <ABOUTARIK<BR/>Ayman> @MILLE@];
 		zlambert    [label = "LAMBERT\nZoé"];
 		iabed       [label = "ABED\nIliès"];
 		tmontagne   [label = <MONTAGNE<BR/>Thomas<BR/><I>Event BDS</I>> @BARB@];
 		eremy       [label = <REMY<BR/>Eliott<BR/><I>Pôle DD</I>> @BDE@ @MILLE@];
-		alaforest   [label = <LAFOREST<BR/>Aurélie<BR/><I> </I>> @BARB@];
+		alaforest   [label = <LAFOREST<BR/>Aurélie> @BARB@];
 		jfayet      [label = <FAYET<BR/>Josselyn<BR/><I>Trésorier</I>> @BDE@ @NEAN@];
 		cmariette   [label = "MARIETTE\nConstant"];
 		lhak        [label = "HAK\nLéo"];
 		nroy        [label = <ROY<BR/>Noéline<BR/><I>Team prev</I>> @BDE@ @NEAN@];
 		nrocher     [label = "ROCHER\nNicolas"];
 		priche      [label = "RICHE\nPhilippe"];
-		tflageolet  [label = <FLAGEOLET<BR/>Thomas<BR/><I> </I>> @BARB@];
+		tflageolet  [label = <FLAGEOLET<BR/>Thomas> @BARB@];
 		lnadler     [label = "NADLER\nLucas"];
 
 

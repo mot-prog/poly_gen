@@ -442,12 +442,14 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 				mhamidouche	[label = "HAMIDOUCHE\nMilane"];
 				boberson  	[label = <OBERSON<BR/>Basil<BR/><I>Secrétaire</I>> @BDE@ penwidth=4 color="Orange"];
 				mroy	   	[label = "ROY\nMax"];
-				esorais		[label = <SORAIS<BR/>Eric<BR/><I>PAF!</I>> @PREZ@ penwidth=4 color="orange"];
+				esorais		[label = <SORAIS<BR/>Eric<BR/><I>PAF!<BR/>10⁵ (2026-2027)</I>> @PREZ@ penwidth=4 color="orange"];
 				cpayet	    [label = <PAYET<BR/>Cédric<BR/><I>Robotech</I>> @PREZ@];
 				bisabelle   [label = <BAVUGILIJE<BR/>Isabelle<BR/><I>Polydance</I>> @PREZ@ penwidth=4 color="purple"];
 				cbaron 		[label = <BARON<BR/>Clément<BR/><I>Sono</I>> @PREZ@];
 				znazi		[label = "NACINOVICH\nZacharie"];
-				eperdrix [label = "PERDRIX\nEdouard"]
+				eperdrix [label = "PERDRIX\nEdouard"];
+				//ajout
+				nlemoine [label = <LEMOINE<BR/>Nathan>];
 				}
 				bcart->tduwez;
 				jwacquet->apillot;
@@ -490,11 +492,14 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 			ndelin [label = "DELIN\nNoé"];
 			jngalamou [label = "NGALAMOU YINIPI\nJospen"];
 			vvroman [label = "VROMAN\nValentin"];
+			tregaud [label = <REGAUD<BR/>Timothée<BR/><I>Robotech</I>> @PREZ@];
+			jramesh [label = <RAMESH<BR/>Jérémy<BR/><I>Robotech(goodies)</I>>];
         }
 
         cpayet -> mterrier [weight = 2.0];
+		cpayet -> jramesh [weight = 2.0];
 		lghazali -> ikuderski [penwidth=2 color = "yellow" weight = 3.0];
-		
+		nlemoine -> etardieux;
     }
 
 ///////////////////////
@@ -523,6 +528,8 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
         boberson -> ebouali [penwidth=2 color = "#f05050" weight = 3.0];
 		rduhamel -> ldufour [weight = 2.0];
 		esorais -> gcarpentier[weight = 3.0];
+		esorais -> yoan[weight = 3.0];
+		esorais -> hiba[weight = 3.0];
 		tpaumas -> cmarchon[weight = 2.0];
 		bisabelle -> ldelaby[weight = 2.0];
 		

@@ -451,7 +451,7 @@ digraph is {
 
 		{rank="same";
 			rhaboucha  [label = <HABOUCHA<BR/>Rania<BR/>>];
-			# hligaliali  [label = <LIGALI ALI<BR/>Halid<BR/>>]; voir rq
+			# hligaliali  [label = <LIGALI ALI<BR/>Halid<BR/>>]; alternant??
 			omaubert  [label = <MAUBERT<BR/>Orion<BR/>>];
 			mlibre  [label = <LIBRE<BR/>Mathilde<BR/>>];
 			yboudhri  [label = <BOUDHRI<BR/>Youssef<BR/><i>Handball</i>> @PREZ@];
@@ -460,7 +460,7 @@ digraph is {
 			sadamou  [label = <ADAMOU<BR/>Salim<BR/>>];
 			llebon  [label = <LEBON<BR/>Léo-Paul<BR/><i>Polyworld</i>> @PREZ@];
 			aballard  [label = <BALLARD<BR/>Anaïs<BR/>>];
-			# hmaftah  [label = <MAFTAH<BR/>Houda<BR/>>]; en double
+			hmaftah  [label = <MAFTAH<BR/>Houda<BR/>>]; 
 			iennahli  [label = <ENNAHLI<BR/>Ilyas<BR/>>];
 			mdaci  [label = <DACI<BR/>Myriam<BR/>>];
 			lkarrout  [label = <KARROUT<BR/>Lina<BR/>>];
@@ -480,6 +480,8 @@ digraph is {
 		amelon -> llebon [style = "dotted"];
 		mvincent -> llebon;
 		irisdepagneu -> aballard;
+		Mathéo -> adelavaldupuis;
+		Gérard -> adelavaldupuis;
 		# cguerra -> hmaftah;
 	}
 	

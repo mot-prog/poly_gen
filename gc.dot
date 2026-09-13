@@ -510,7 +510,7 @@ digraph gc {
 			rconstant [label = <CONSTANT<BR/>Raphaël<BR/>> ];
 			nlicour [label = <LICOUR<BR/>Nathan<BR/><I>ComediaXzythologie</I>> @MILLE@ @PREZ@];
 			agrimonprez [label = <GRIMONPREZ<BR/>Auguste<BR/><I>BDS</I>> @BARB@ @PREZ@];
-			cblanchard [label = <BLANCHARD<BR/>Chloé<BR/><I>Secrétaire</I><BR/><i>polyfrites</i>> fillcolor="#f05050:yellow" @MILLE@];
+			cblanchard [label = <BLANCHARD<BR/>Chloé<BR/><I>Secrétaire et rr</I><BR/><i>polyfrites</i>> fillcolor="#f05050:yellow" @MILLE@];
 			tpouget [label = <POUGET<BR/>Thomas<BR/>> @BARB@];
 			lgabet [label = <GABET<BR/>Lucas<BR/>> ];
 			cpescheux [label = <PESCHEUX<BR/>Corentin<BR/>> ];

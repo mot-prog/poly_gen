@@ -11,7 +11,8 @@ all : $(PDFs)
 #%.jpg: %.dot
 #	dot -Tjpg $< > $@
 
-# CONTACTER MEMBRES PR COULEURS
+# CONTACTER MEMBRES PR COULEURS.
+# RAJOUTEZ VOS LISTES, NE SUPPRIMEZ PAS LES ANCIENNES.
 %.pdf: %.dot
 	sed -e 's/@BDE@/fillcolor="#f05050"/g' \
 	    -e 's/@PREZ@/fillcolor="yellow"/g' \
