@@ -20,7 +20,7 @@ digraph mat {
 		color = none;
 		node [shape = none];
 
-		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
 	}
 		subgraph cluster_legende {
 		label = "Légende";
@@ -500,6 +500,10 @@ digraph mat {
 			jturlin		[label = <TURLIN<BR/>Julie<BR/><I>BDA</I>> @PREZ@ penwidth=4 color="orange"];
 			mdegroote	[label = <DEGROOTE<BR/>Maxime<BR/>> penwidth=4 color="orange"];	
 			jgagner		[label = "GAGNER\nJulia"];
+			// Déclaration des parrains manquants (Extérieurs ou années inconnues)
+			bange    [label = "BAMURANGE\nAnge"];
+			gdelbe   [label = "DELBE\nGabriele"];
+			bpeyrard [label = "PEYRARD\nBenjamin"];
 		}
 			sduchesne->smuther;
 			qberthod->agengembre;
@@ -511,7 +515,36 @@ digraph mat {
 			ldelahaye->mdegroote;
 			sklis->jgagner;
 
+		
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+		
+		{ rank = "same";//2028
+			bnathan		[label = "BOMY\nNathan"];
+			sjr         [label = "SAMI\nJr."];
+			sguillaume  [label = "SALLÉ\nGuillaume"];
+			rlucien     [label = "ROULLET\nLucien"];
+			bmael       [label = <BOUVIER-THÉBAULT<BR/>Maël<BR/><I>Vice président</I>> @BDE@ @NEAN@]; 
+			pkentin     [label = <PICO<BR/>Kentin<BR/><I>Inté-events</I>> @BDE@ @NEAN@];
+			gjulia      [label = "GAGNER\nJulia"];
+			gyann       [label = <GASTINEL<BR/>Yann<BR/><I>Inté-évent</I>> @BDE@ @MILLE@];
+			mromane     [label = "MIKOLAJCZYK\nRomane"];
+			balexandre  [label = <BROGNIART<BR/>Alexandre<BR/><I>Respo course Gymnase</I>> @PREZ@];
+		}
 
+		// Liens de parrainage classique
+		htrouillard -> bnathan;
+		sboukal -> sjr;
+		lcapra -> bmael; 
+		lcapra -> pkentin; 
+		tcolras -> gjulia;
+		bange -> gyann; // Parrain non présent sur l'arbre
+		gdelbe -> mromane; // Parrain non présent sur l'arbre
+
+		// Liens de parrainage adoptif / second parrain
+		bpeyrard -> bmael [style=dashed]; // Parrain non présent sur l'arbre
+		arondeau -> pkentin [style=dashed penwidth=2 color = "#f05050"];
 	}
 	endnode [style=invis];
 

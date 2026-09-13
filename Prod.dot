@@ -170,6 +170,13 @@ subgraph cluster_prod {
 			pgeorgelin			[label = <GEORGELIN<BR/>Paul<BR/><I>Trésorier</I>> @BDE@ penwidth=4 color="yellow"];
 			btom				[label = "BRIOLAT\nTom"];
 			gtom				[label = "GRATTEPANCHE\nTom"];
+			esasorith     		[label = "SASORITH\nEvan"];
+			drichard      		[label = "RICHARD\nDavid"];
+			obeutter      		[label = "BEUTTER\nOlivia"];
+			adecaestecker 		[label = "DECAESTECKER\nArthur"];
+			nnauzeret     		[label = "NAUZERET\nNicolas"];
+			hdemaret      		[label = "DEMARET\nHugo"];
+			fmayet        		[label = "MAYET\nFlavien"];
 		}
 		csion -> opatissier;
 		cdeffontaines -> rfuchs;
@@ -179,6 +186,61 @@ subgraph cluster_prod {
 		cdeffontaines -> pgeorgelin [penwidth=2 color = "#f05050"];
 		jcarville -> btom;
 		jcarville -> gtom;
+
+///////////////////////
+// ---- 2028 ---- 
+///////////////////////
+
+		{ rank = "same";//2028
+			hgodefroy     [label = <GODEFROY<BR/>Hector<BR/><I>Respo alternant</I>> @BDE@ @MILLE@];
+			mlilie        [label = <MOUQUET<BR/>Lilie<BR/><I>Communication et alternant</I>> @BDE@ @NEAN@];
+			lborel        [label = "BOREL\nLucas"];
+			ahedar        [label = "HEDAR\nAchraf"];
+			esenicourt    [label = "SENICOURT\nElise"];
+			cverhaeghe    [label = "VERHAEGHE\nCharles"];
+			yellart       [label = "ELLART\nYani"];
+			hlial         [label = "LIAL\nHugo"];
+			gpruvost      [label = "PRUVOST\nGuillaume"];
+			cfriscourt    [label = "FRISCOURT\nCharlise"];
+			znakro        [label = "NAKRO\nZineb"];
+			mrieu         [label = "RIEU\nMarius"];
+			mcarpentier   [label = "CARPENTIER\nMathéo"];
+			scourtade     [label = "COURTADE\nSimon"];
+			hbeauzamy     [label = "BEAUZAMY\nHugo"];
+			bcouppoussamy [label = "COUPPOUSSAMY\nBala"];
+			pflajolet     [label = "FLAJOLET\nPaul"];
+			sjeunier      [label = "JEUNIER\nSimon"];
+			lcoussemacq   [label = "COUSSEMACQ\nLouis"];
+			lgutowski     [label = "GUTOWSKI\nLaura"];
+			aleroy        [label = "LEROY\nAlexandre"];
+		}
+
+		// Liens de parrainage classique
+		eandouche -> lborel;
+		opatissier -> esenicourt;
+		esasorith -> yellart;       
+		drichard -> gpruvost;       
+		btom -> cfriscourt;
+		gtom -> znakro;
+		obeutter -> hgodefroy;
+		obeutter -> mlilie;
+		thomas -> mlilie;           
+		romy -> mlilie;             
+		scourtade -> mrieu;
+		nnauzeret -> mcarpentier;   
+		mrieu -> scourtade;
+		hdemaret -> hbeauzamy;      
+		mthys -> bcouppoussamy;
+		tcami -> lcoussemacq;
+		adecaestecker -> aleroy;
+
+		// Liens de parrainage adoptif
+		fmayet -> cverhaeghe [style=dashed];        
+		btom -> znakro [style=dashed];
+		adecaestecker -> hgodefroy [style=dashed];
+		gtom -> bcouppoussamy [style=dashed];
+		tcami -> aleroy [style=dashed];
+
 	}
 	subgraph cluster_promos {
 		label = "Promos";
@@ -186,7 +248,7 @@ subgraph cluster_prod {
 		color = none;
 		node [shape = none];
 
-		"2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+		"2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027" -> "2028";
 	}
 	subgraph cluster_legende {
 		label = "Légende";
