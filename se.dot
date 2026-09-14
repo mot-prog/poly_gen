@@ -407,7 +407,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 				bcart	   [label = <CART<BR/>Benjamin<BR/><I>Robotech</I>> @PREZ@];	
 				}
 				rcatoir->bcart ;
-				albinmout->bcart [style=dashed];
+				albinmout->bcart [style=dashed color=yellow];
 				dcassez->pcasimiri;
 				gbura->vpiroux;
 				rcatoir->nnait;
@@ -433,7 +433,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 
 	{rank = "same";
 				apillot 	[label = "PILLOT\nAnthony"];
-				ahoudusse  [label = "HOUDUSSE\nAgathe"];
+				ahoudusse   [label = "HOUDUSSE\nAgathe"];
 				tduwez	   	[label = "DUWEZ\nThibault"];
 				lghazali	[label = <GHAZALI<BR/>Lilia<BR/><I>Le Studio</I>> @PREZ@];
 				tmerien	   	[label = "MERIEN\nTom"];
@@ -463,7 +463,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 				mcam->boberson;
 				nnait->mroy;
 				yberrada->cpayet;
-				yberrada->eperdrix;
+				yberrada->eperdrix [style=dashed];
 				bisabelle->esorais;					
     }
 
@@ -502,6 +502,16 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 		cpayet -> jramesh [weight = 2.0];
 		lghazali -> ikuderski [penwidth=2 color = "yellow" weight = 3.0];
 		nlemoine -> etardieux;
+
+///////////////////////
+// ---- 2029 ---- 
+///////////////////////
+	{ rank = "same";
+            tvoustad [label = <VOUSTAD<BR/>Tidjy>];
+        }
+
+        mterrier -> tvoustad;
+
     }
 
 ///////////////////////
@@ -641,7 +651,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 		color = none;
 		node [shape = none];
 
-		"2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027"->"2028";
+		"2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027"->"2028" -> "2029";
 	}
 
 ///////////////////////
