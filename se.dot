@@ -463,6 +463,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 				mcam->boberson;
 				nnait->mroy;
 				yberrada->cpayet;
+				yberrada->eperdrix;
 				bisabelle->esorais;					
     }
 
@@ -479,7 +480,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
         { rank = "same";
             mterrier [label = <TERRIER<BR/>Moïse<BR/><I>Robotech(VP)</I>>];
 			bjoumier [label = "JOUMIER\nBaptiste"];
-			achaoui [label = "Chaoui kouraichi\nAli"];
+			achaoui [label = "CHAOUI KOURAICHI\nAli"];
 			gsailly [label = "SAILLY\nGrégoire"];
 			ikuderski [label = <KUDERSKI<BR/>Illyan<BR/><I>Le Studio</I>> @PREZ@];
 			etardieux [label = "TARDIEUX\nEliott"];
@@ -494,6 +495,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 			vvroman [label = "VROMAN\nValentin"];
 			tregaud [label = <REGAUD<BR/>Timothée<BR/><I>Robotech</I>> @PREZ@];
 			jramesh [label = <RAMESH<BR/>Jérémy<BR/><I>Robotech(goodies)</I>>];
+			fbonkougnou [label = <BONKOUGNOU WENBENEDO<BR/>Franck>];
         }
 
         cpayet -> mterrier [weight = 2.0];

@@ -441,6 +441,7 @@ digraph is {
 		dlahanque->esurace;
 		abonnefant->avandamme;
 		irouabah->xmuller;
+		cbaron -> xmuller [penwidth=2 color = "#f05050"];
 		remicleme->lleane;
 		mboubacar->alo;
 		mbouvier->oroche;
@@ -476,7 +477,7 @@ digraph is {
 		}
 		aballard -> omaubert;
 		dbreguet -> mlibre;
-		cmueller -> cguerra;
+		xmuller -> cguerra [penwidth=2 color = "#f05050"];
 		amelon -> llebon [style = "dotted"];
 		mvincent -> llebon;
 		irisdepagneu -> aballard;

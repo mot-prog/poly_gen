@@ -207,7 +207,7 @@ subgraph cluster_prod {
 			mcarpentier   [label = "CARPENTIER\nMathéo"];
 			scourtade     [label = "COURTADE\nSimon"];
 			hbeauzamy     [label = "BEAUZAMY\nHugo"];
-			bcouppoussamy [label = "COUPPOUSSAMY\nBala"];
+			bcouppoussamy [label = "COUPPOUSSAMY BALAN\nSophie"];
 			pflajolet     [label = "FLAJOLET\nPaul"];
 			sjeunier      [label = "JEUNIER\nSimon"];
 			lcoussemacq   [label = "COUSSEMACQ\nLouis"];

@@ -534,6 +534,7 @@ digraph gc {
 			fratovondriaka [label = <RATOVONDRIAKA<BR/>Fabrina<BR/>> ];
 			msahmoudi [label = <SAHMOUDI<BR/>Mohamed<BR/>> ];
 			hdelauney [label = <DELAUNEY<BR/>Hugo<BR/><I>Gymnase</I>> @PREZ@];
+			aabakar [label = <ABAKAR-MAHAMAT<BR/>Adam>];
 		}		
 		emubiki -> entumbamulumba;
 		zloeb -> mgoossens;
