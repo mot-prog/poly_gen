@@ -478,7 +478,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
         fillcolor = "#ff5d5d";
 
         { rank = "same";
-            mterrier [label = <TERRIER<BR/>Moïse<BR/><I>Robotech(VP)</I>>];
+      mterrier [label = <TERRIER<BR/>Moïse<BR/><I>Robotech(VP)</I>>];
 			bjoumier [label = "JOUMIER\nBaptiste"];
 			achaoui [label = "CHAOUI KOURAICHI\nAli"];
 			gsailly [label = "SAILLY\nGrégoire"];
@@ -498,8 +498,7 @@ cremaschi	[label = <CREMASCHI<BR/>Guillaume<BR/><I>Inté/Events<BR/>4L'</I>> fil
 			fbonkougnou [label = <BONKOUGNOU WENBENEDO<BR/>Franck>];
         }
 
-        cpayet -> mterrier [weight = 2.0];
-		cpayet -> jramesh [weight = 2.0];
+    cpayet -> mterrier [weight = 2.0];
 		lghazali -> ikuderski [penwidth=2 color = "yellow" weight = 3.0];
 		nlemoine -> etardieux;
 
